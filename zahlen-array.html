@@ -49,7 +49,9 @@
       function addNumToArray() {
         const addNumber = document.getElementById("numberInputField").value;
         if (!isItANumber(addNumber)) {
-          console.log(`Fehler: "${addNumber}" ist keine Zahl!`);
+          console.log(
+            `Eingabefehler in "Inhalt einfügen": "${addNumber}" ist keine Zahl!`
+          );
           clearInputField("numberInputField");
           return;
         }
@@ -63,7 +65,9 @@
       function delNumByIdInArray() {
         const elementPosition = document.getElementById("idDeleteField").value;
         if (!isItANumber(elementPosition)) {
-          console.log(`Fehler: "${elementPosition}" ist keine Zahl!`);
+          console.log(
+            `Eingabefehler in "ID Löschen": "${elementPosition}" ist keine Zahl!`
+          );
           clearInputField("idDeleteField");
           return;
         }
@@ -72,12 +76,14 @@
         console.log(numberArray);
       }
 
-      // Lösche ein Element im Array durch das Element
+      // Lösche ein Element im Array durch den Inhalt
       function delNumByNumInArray() {
         let numberToFind;
         const delNumber = document.getElementById("deleteContentField").value;
         if (!isItANumber(delNumber)) {
-          console.log(`Fehler: "${delNumber}" ist keine Zahl!`);
+          console.log(
+            `Eingabefehler in "Content Löschen": "${delNumber}" ist keine Zahl!`
+          );
           clearInputField("deleteContentField");
           return;
         }
@@ -88,7 +94,9 @@
         if (numberToFind != -1) {
           numberArray.splice(numberToFind, 1);
         } else {
-          console.log(`Fehler: "${delNumber}" nicht gefunden!`);
+          console.log(
+            `Fehler in "Content Löschen": "${delNumber}" nicht gefunden!`
+          );
           return;
         }
 
@@ -112,7 +120,7 @@
       // Summiere den den gesamten Array
       function sumArray() {
         if (numberArray.length === 0) {
-          console.log(`Fehler: numberArray ist leer!`);
+          console.log(`Fehler mit der Summierung: numberArray ist leer!`);
           return;
         }
 
@@ -128,7 +136,9 @@
       // Lösche das Eingabefeld
       function clearInputField(id) {
         if (!document.getElementById(id)) {
-          console.log(`Fehler: ID ${id} nicht gefunden!`);
+          console.log(
+            `Fehler beim Löschen des Eingabefeldes: ID ${id} nicht gefunden!`
+          );
           return false;
         }
         document.getElementById(id).value = "";
