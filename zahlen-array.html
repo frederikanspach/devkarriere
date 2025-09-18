@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zahlen-Array</title>
+  </head>
+  <body>
+    <div>
+      Inhalt einfügen: <input type="number" id="numberInputField" />
+      <button class="button" id="numberInputButton" onclick="addNumToArray()">
+        Einfügen
+      </button>
+    </div>
+
+    <div>
+      ID Löschen: <input type="number" id="idDeleteField" />
+      <button class="button" id="idDeleteButton" onclick="delNumByIdInArray()">
+        Löschen
+      </button>
+    </div>
+
+    <div>
+      Content Löschen: <input type="number" id="deleteContentField" />
+      <button
+        class="button"
+        id="deleteContentButton"
+        onclick="delNumByNumInArray()"
+      >
+        Löschen
+      </button>
+    </div>
+
+    <div>
+      <button class="button" id="showButton" onclick="showArray()">
+        Anzeigen
+      </button>
+      <button class="button" id="multiplyButton" onclick="multiplyArray()">
+        Multipliziere (x2)
+      </button>
+      <button class="button" id="summButton" onclick="sumArray()">Summe</button>
+    </div>
+
+    <script>
+      "use strict";
+      let numberArray = [10, 20, 30];
+
+      // Füge dem Array eine Zahl hinzu
+      function addNumToArray() {
+        const addNumber = document.getElementById("numberInputField").value;
+        if (!isItANumber(addNumber)) {
+          console.log(`Fehler: "${addNumber}" ist keine Zahl!`);
+          clearInputField("numberInputField");
+          return;
+        }
+
+        numberArray.push(Number(addNumber));
+        clearInputField("numberInputField");
+        console.log(numberArray);
+      }
+
+      // Lösche ein Element im Array durch seine Position
+      function delNumByIdInArray() {
+        const elementPosition = document.getElementById("idDeleteField").value;
+        if (!isItANumber(elementPosition)) {
+          console.log(`Fehler: "${elementPosition}" ist keine Zahl!`);
+          clearInputField("idDeleteField");
+          return;
+        }
+        numberArray.splice(elementPosition, 1);
+        clearInputField("idDeleteField");
+        console.log(numberArray);
+      }
+
+      // Lösche ein Element im Array durch das Element
+      function delNumByNumInArray() {
+        let numberToFind;
+        const delNumber = document.getElementById("deleteContentField").value;
+        if (!isItANumber(delNumber)) {
+          console.log(`Fehler: "${delNumber}" ist keine Zahl!`);
+          clearInputField("deleteContentField");
+          return;
+        }
+
+        numberToFind = numberArray.findIndex(
+          (num) => num === Number(delNumber)
+        );
+        if (numberToFind != -1) {
+          numberArray.splice(numberToFind, 1);
+        } else {
+          console.log(`Fehler: "${delNumber}" nicht gefunden!`);
+          return;
+        }
+
+        clearInputField("deleteContentField");
+        console.log(numberArray);
+      }
+
+      // Zeigen den Inhalt vom Array an
+      function showArray() {
+        console.log(numberArray);
+      }
+
+      // Multipliziere den gesamten Array
+      function multiplyArray() {
+        const multyplyNumberArray = numberArray.map((num) => num * 2);
+        // Geht nur, wenn numberArray mit let deklariert wurde!
+        numberArray = multyplyNumberArray;
+        console.log(numberArray);
+      }
+
+      // Summiere den den gesamten Array
+      function sumArray() {
+        if (numberArray.length === 0) {
+          console.log(`Fehler: numberArray ist leer!`);
+          return;
+        }
+
+        const reduceArray = numberArray.reduce(
+          (previousValue, currentValue) => {
+            return previousValue + currentValue;
+          }
+        );
+        numberArray.splice(0, numberArray.length, reduceArray);
+        console.log(numberArray);
+      }
+
+      // Lösche das Eingabefeld
+      function clearInputField(id) {
+        if (!document.getElementById(id)) {
+          console.log(`Fehler: ID ${id} nicht gefunden!`);
+          return false;
+        }
+        document.getElementById(id).value = "";
+      }
+
+      // Testet einen String, ob er nur Nummern enthält
+      function isItANumber(testNumber) {
+        const regex = /^[0-9]+$/;
+
+        if (regex.test(testNumber)) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>
