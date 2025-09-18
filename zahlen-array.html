@@ -111,6 +111,11 @@
 
       // Multipliziere den gesamten Array
       function multiplyArray() {
+        if (numberArray.length === 0) {
+          console.log(`Fehler mit dem Multiplizieren: numberArray ist leer!`);
+          return;
+        }
+
         const multyplyNumberArray = numberArray.map((num) => num * 2);
         // Geht nur, wenn numberArray mit let deklariert wurde!
         numberArray = multyplyNumberArray;
