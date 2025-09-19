@@ -47,8 +47,11 @@
 
       // Füge dem Array eine Zahl hinzu
       function addNumber() {
-        const addNumber = document.getElementById("numberInputField").value;
-        if (!isItANumber(addNumber)) {
+        const addNumber = Number(
+          document.getElementById("numberInputField").value
+        );
+
+        if (typeof addNumber !== "number") {
           console.log(
             `Eingabefehler in "Inhalt einfügen": "${addNumber}" ist keine Zahl!`
           );
@@ -63,8 +66,10 @@
 
       // Lösche ein Element im Array durch seine Position
       function deleteNumberById() {
-        const elementPosition = document.getElementById("deleteIdField").value;
-        if (!isItANumber(elementPosition)) {
+        const elementPosition = Number(
+          document.getElementById("deleteIdField").value
+        );
+        if (typeof elementPosition !== "number") {
           console.log(
             `Eingabefehler in "ID Löschen": "${elementPosition}" ist keine Zahl!`
           );
@@ -85,8 +90,10 @@
       // Lösche ein Element im Array durch den Inhalt
       function deleteNumberByNumber() {
         let numberToFind;
-        const delNumber = document.getElementById("deleteContentField").value;
-        if (!isItANumber(delNumber)) {
+        const delNumber = Number(
+          document.getElementById("deleteContentField").value
+        );
+        if (typeof delNumber !== "number") {
           console.log(
             `Eingabefehler in "Content Löschen": "${delNumber}" ist keine Zahl!`
           );
@@ -153,17 +160,6 @@
           return false;
         }
         document.getElementById(id).value = "";
-      }
-
-      // Testet einen String, ob er nur Nummern enthält
-      function isItANumber(testNumber) {
-        const regex = /^[0-9]+$/;
-
-        if (regex.test(testNumber)) {
-          return true;
-        } else {
-          return false;
-        }
       }
     </script>
   </body>
