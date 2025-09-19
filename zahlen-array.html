@@ -70,6 +70,12 @@
           );
           clearInputField("idDeleteField");
           return;
+        } else if (elementPosition >= numberArray.length) {
+          console.log(
+            `Eingabefehler in "ID Löschen": Die Eingabe (${elementPosition}) muss kleiner als "${numberArray.length}" sein!`
+          );
+          clearInputField("idDeleteField");
+          return;
         }
         numberArray.splice(elementPosition, 1);
         clearInputField("idDeleteField");
