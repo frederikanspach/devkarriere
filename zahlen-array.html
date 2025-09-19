@@ -8,14 +8,14 @@
   <body>
     <div>
       Inhalt einfügen: <input type="number" id="numberInputField" />
-      <button class="button" id="numberInputButton" onclick="addNumToArray()">
+      <button class="button" id="numberInputButton" onclick="addNumber()">
         Einfügen
       </button>
     </div>
 
     <div>
-      ID Löschen: <input type="number" id="idDeleteField" />
-      <button class="button" id="idDeleteButton" onclick="delNumByIdInArray()">
+      ID Löschen: <input type="number" id="deleteIdField" />
+      <button class="button" id="idDeleteButton" onclick="deleteNumberById()">
         Löschen
       </button>
     </div>
@@ -25,7 +25,7 @@
       <button
         class="button"
         id="deleteContentButton"
-        onclick="delNumByNumInArray()"
+        onclick="deleteNumberByNumber()"
       >
         Löschen
       </button>
@@ -46,7 +46,7 @@
       let numberArray = [10, 20, 30];
 
       // Füge dem Array eine Zahl hinzu
-      function addNumToArray() {
+      function addNumber() {
         const addNumber = document.getElementById("numberInputField").value;
         if (!isItANumber(addNumber)) {
           console.log(
@@ -62,28 +62,28 @@
       }
 
       // Lösche ein Element im Array durch seine Position
-      function delNumByIdInArray() {
-        const elementPosition = document.getElementById("idDeleteField").value;
+      function deleteNumberById() {
+        const elementPosition = document.getElementById("deleteIdField").value;
         if (!isItANumber(elementPosition)) {
           console.log(
             `Eingabefehler in "ID Löschen": "${elementPosition}" ist keine Zahl!`
           );
-          clearInputField("idDeleteField");
+          clearInputField("deleteIdField");
           return;
         } else if (elementPosition >= numberArray.length) {
           console.log(
             `Eingabefehler in "ID Löschen": Die Eingabe (${elementPosition}) muss kleiner als "${numberArray.length}" sein!`
           );
-          clearInputField("idDeleteField");
+          clearInputField("deleteIdField");
           return;
         }
         numberArray.splice(elementPosition, 1);
-        clearInputField("idDeleteField");
+        clearInputField("deleteIdField");
         console.log(numberArray);
       }
 
       // Lösche ein Element im Array durch den Inhalt
-      function delNumByNumInArray() {
+      function deleteNumberByNumber() {
         let numberToFind;
         const delNumber = document.getElementById("deleteContentField").value;
         if (!isItANumber(delNumber)) {
