@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zahlen-Array</title>
+  </head>
+  <body>
+    <div>
+      Inhalt einfügen: <input type="text" id="inputField" />
+      <button class="button" id="numberInputButton" onclick="addElement()">
+        Einfügen
+      </button>
+    </div>
+
+    <div>
+      ID Löschen: <input type="number" id="deleteIdField" />
+      <button class="button" id="idDeleteButton" onclick="deleteNumberById()">
+        Löschen
+      </button>
+    </div>
+
+    <div>
+      Content Löschen: <input type="text" id="deleteElementField" />
+      <button
+        class="button"
+        id="deleteContentButton"
+        onclick="deleteElementByElement()"
+      >
+        Löschen
+      </button>
+    </div>
+
+    <div>
+      <button class="button" id="showButton" onclick="showArray()">
+        Anzeigen
+      </button>
+      <button class="button" id="multiplyButton" onclick="multiplyArray()">
+        Multipliziere (x2)
+      </button>
+      <button class="button" id="summButton" onclick="sumArray()">Summe</button>
+    </div>
+
+    <script>
+      "use strict";
+      let elementArray = [10, 20, 30, 1, 2, 3, "Fred", "Karl", "Peter"];
+
+      // Füge dem Array eine Zahl hinzu
+      function addElement() {
+        const addElement = document.getElementById("inputField").value;
+
+        // @@
+        console.log(addElement);
+
+        elementArray.push(addElement);
+        clearInputField("inputField");
+        console.log(elementArray);
+      }
+
+      // Lösche ein Element im Array durch seine Position
+      function deleteNumberById() {
+        const elementPosition = Number(
+          document.getElementById("deleteIdField").value
+        );
+        if (typeof elementPosition !== "number") {
+          console.log(
+            `Eingabefehler in "ID Löschen": "${elementPosition}" ist keine Zahl!`
+          );
+          clearInputField("deleteIdField");
+          return;
+        } else if (elementPosition >= elementArray.length) {
+          console.log(
+            `Eingabefehler in "ID Löschen": Die Eingabe (${elementPosition}) muss kleiner als "${elementArray.length}" sein!`
+          );
+          clearInputField("deleteIdField");
+          return;
+        }
+        elementArray.splice(elementPosition, 1);
+        clearInputField("deleteIdField");
+        console.log(elementArray);
+      }
+
+      // Lösche ein Element im Array durch den Inhalt
+      function deleteElementByElement() {
+        let elementToFind;
+        const delNumber = document.getElementById("deleteElementField").value;
+
+        elementToFind = elementArray.findIndex((num) => num === delNumber);
+        if (elementToFind != -1) {
+          elementArray.splice(elementToFind, 1);
+        } else {
+          console.log(
+            `Fehler in "Content Löschen": "${delNumber}" nicht gefunden!`
+          );
+          return;
+        }
+
+        clearInputField("deleteElementField");
+        console.log(elementArray);
+      }
+
+      // Zeigen den Inhalt vom Array an
+      function showArray() {
+        console.log(elementArray);
+      }
+
+      // Multipliziere den gesamten Array
+      function multiplyArray() {
+        if (elementArray.length === 0) {
+          console.log(`Fehler mit dem Multiplizieren: numberArray ist leer!`);
+          return;
+        }
+
+        const multyplyNumberArray = elementArray.map((num) => num * 2);
+        // Geht nur, wenn numberArray mit let deklariert wurde!
+        elementArray = multyplyNumberArray;
+        console.log(elementArray);
+      }
+
+      // Summiere den den gesamten Array
+      function sumArray() {
+        if (elementArray.length === 0) {
+          console.log(`Fehler mit der Summierung: numberArray ist leer!`);
+          return;
+        }
+
+        const reduceArray = elementArray.reduce(
+          (previousValue, currentValue) => {
+            return previousValue + currentValue;
+          }
+        );
+        elementArray.splice(0, elementArray.length, reduceArray);
+        console.log(elementArray);
+      }
+
+      // Lösche das Eingabefeld
+      function clearInputField(id) {
+        if (!document.getElementById(id)) {
+          console.log(
+            `Fehler beim Löschen des Eingabefeldes: ID ${id} nicht gefunden!`
+          );
+          return false;
+        }
+        document.getElementById(id).value = "";
+      }
+    </script>
+  </body>
+</html>
