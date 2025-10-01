@@ -185,7 +185,7 @@ function checkAnswer(answer, elementId) {
   const buttonFour = document.getElementById("answer-four");
   buttonFour.removeAttribute("onclick");
   const buttonSolution = document.getElementById("solution");
-  buttonFour.removeAttribute("onclick");
+  buttonSolution.removeAttribute("onclick");
 }
 
 // Nur korrekten Button markieren
