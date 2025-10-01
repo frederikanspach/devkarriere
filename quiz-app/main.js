@@ -65,13 +65,14 @@ let correctButton;
 // Listener Load Page
 document.addEventListener("DOMContentLoaded", appendQuestion);
 
-// Zufällige Frage auswählen und Antworten mixen
+// Zufällige Frage auswählen
 function randomQuestion() {
   const questionHash =
     questionArray[Math.floor(Math.random() * questionArray.length)];
   return questionHash;
 }
 
+// Antworten mixen, richtigen Button speichern uns Ausgabe bauen
 function appendQuestion() {
   const questionHash = randomQuestion();
   const question = questionHash.question;
@@ -91,6 +92,7 @@ function appendQuestion() {
   randomIndex = Math.floor(Math.random() * rndArray.length);
   const [positionFour] = rndArray.splice(randomIndex, 1);
 
+  // Richtigen Button speichern
   if (positionOne === 0) {
     correctButton = "answer-one";
   } else if (positionTwo === 0) {
@@ -186,12 +188,13 @@ function checkAnswer(answer, elementId) {
   buttonFour.removeAttribute("onclick");
 }
 
-// Korrekte
+// Nur korrekten Button markieren
 function answerCorrect(elementId) {
   const button = document.getElementById(elementId);
   button.classList.add("correct");
 }
 
+// Falschen und korrekten Button markieren
 function answerIncorrect(elementId) {
   const button = document.getElementById(elementId);
   button.classList.add("incorrect");
