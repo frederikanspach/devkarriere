@@ -314,12 +314,19 @@ function updateScoreDisplay() {
 }
 
 function resetScore() {
-  correctCount = 0;
-  incorrectCount = 0;
-  solutionCount = 0;
+  const isConfirmed = confirm(
+    "Es werden alle Punkte gelöscht!\n\n Fortfahren?"
+  );
 
-  saveScoreToLocalStorage();
-  updateScoreDisplay();
+  if (isConfirmed) {
+    correctCount = 0;
+    incorrectCount = 0;
+    solutionCount = 0;
+
+    saveScoreToLocalStorage();
+    updateScoreDisplay();
+    alert("Alle Punkte wurden gelöscht.");
+  }
 }
 
 function deleteLocalStorage() {

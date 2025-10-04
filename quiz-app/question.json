@@ -3,255 +3,99 @@
     "questionId": 1,
     "question": "Was ist die Hauptstadt von Deutschland?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Hamburg",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "München",
-        "isCorrect": false
-      },
-      {
-        "answerId": 2,
-        "answer": "Berlin",
-        "isCorrect": true
-      },
-      {
-        "answerId": 3,
-        "answer": "Köln",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "Hamburg", "isCorrect": false },
+      { "answerId": 1, "answer": "München", "isCorrect": false },
+      { "answerId": 2, "answer": "Berlin", "isCorrect": true },
+      { "answerId": 3, "answer": "Köln", "isCorrect": false }
     ]
   },
   {
     "questionId": 2,
     "question": "Welcher Fluss fließt durch die ägyptische Hauptstadt Kairo?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Rhein",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "Donau",
-        "isCorrect": false
-      },
-      {
-        "answerId": 2,
-        "answer": "Nil",
-        "isCorrect": true
-      },
-      {
-        "answerId": 3,
-        "answer": "Themse",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "Rhein", "isCorrect": false },
+      { "answerId": 1, "answer": "Donau", "isCorrect": false },
+      { "answerId": 2, "answer": "Nil", "isCorrect": true },
+      { "answerId": 3, "answer": "Themse", "isCorrect": false }
     ]
   },
   {
     "questionId": 3,
     "question": "Wie viele Spieler hat eine Eishockeymannschaft auf dem Eis (ohne Torwart)?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "6",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "5",
-        "isCorrect": true
-      },
-      {
-        "answerId": 2,
-        "answer": "4",
-        "isCorrect": false
-      },
-      {
-        "answerId": 3,
-        "answer": "7",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "6", "isCorrect": false },
+      { "answerId": 1, "answer": "5", "isCorrect": true },
+      { "answerId": 2, "answer": "4", "isCorrect": false },
+      { "answerId": 3, "answer": "7", "isCorrect": false }
     ]
   },
   {
     "questionId": 4,
     "question": "Welches chemische Element hat das Symbol 'Fe'?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Fluor",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "Eisen",
-        "isCorrect": true
-      },
-      {
-        "answerId": 2,
-        "answer": "Gold",
-        "isCorrect": false
-      },
-      {
-        "answerId": 3,
-        "answer": "Blei",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "Fluor", "isCorrect": false },
+      { "answerId": 1, "answer": "Eisen", "isCorrect": true },
+      { "answerId": 2, "answer": "Gold", "isCorrect": false },
+      { "answerId": 3, "answer": "Blei", "isCorrect": false }
     ]
   },
   {
     "questionId": 5,
     "question": "Was ist die Einheit der elektrischen Spannung?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Ampere",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "Ohm",
-        "isCorrect": false
-      },
-      {
-        "answerId": 2,
-        "answer": "Watt",
-        "isCorrect": false
-      },
-      {
-        "answerId": 3,
-        "answer": "Volt",
-        "isCorrect": true
-      }
+      { "answerId": 0, "answer": "Ampere", "isCorrect": false },
+      { "answerId": 1, "answer": "Ohm", "isCorrect": false },
+      { "answerId": 2, "answer": "Watt", "isCorrect": false },
+      { "answerId": 3, "answer": "Volt", "isCorrect": true }
     ]
   },
   {
     "questionId": 6,
     "question": "Wann wurde die Berliner Mauer errichtet?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "1961",
-        "isCorrect": true
-      },
-      {
-        "answerId": 1,
-        "answer": "1949",
-        "isCorrect": false
-      },
-      {
-        "answerId": 2,
-        "answer": "1989",
-        "isCorrect": false
-      },
-      {
-        "answerId": 3,
-        "answer": "1953",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "1961", "isCorrect": true },
+      { "answerId": 1, "answer": "1949", "isCorrect": false },
+      { "answerId": 2, "answer": "1989", "isCorrect": false },
+      { "answerId": 3, "answer": "1953", "isCorrect": false }
     ]
   },
   {
     "questionId": 7,
     "question": "Wie heißt das größte Tier der Welt?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Afrikanischer Elefant",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "Blauwal",
-        "isCorrect": true
-      },
-      {
-        "answerId": 2,
-        "answer": "Walhai",
-        "isCorrect": false
-      },
-      {
-        "answerId": 3,
-        "answer": "Giraffe",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "Afrikanischer Elefant", "isCorrect": false },
+      { "answerId": 1, "answer": "Blauwal", "isCorrect": true },
+      { "answerId": 2, "answer": "Walhai", "isCorrect": false },
+      { "answerId": 3, "answer": "Giraffe", "isCorrect": false }
     ]
   },
   {
     "questionId": 8,
     "question": "Welche Programmiersprache ist als 'die Sprache des Internets' bekannt?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Python",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "C++",
-        "isCorrect": false
-      },
-      {
-        "answerId": 2,
-        "answer": "JavaScript",
-        "isCorrect": true
-      },
-      {
-        "answerId": 3,
-        "answer": "Java",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "Python", "isCorrect": false },
+      { "answerId": 1, "answer": "C++", "isCorrect": false },
+      { "answerId": 2, "answer": "JavaScript", "isCorrect": true },
+      { "answerId": 3, "answer": "Java", "isCorrect": false }
     ]
   },
   {
     "questionId": 9,
     "question": "Wie viele Zeitzonen durchquert Russland in West-Ost-Richtung?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "7",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "9",
-        "isCorrect": false
-      },
-      {
-        "answerId": 2,
-        "answer": "11",
-        "isCorrect": true
-      },
-      {
-        "answerId": 3,
-        "answer": "10",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "7", "isCorrect": false },
+      { "answerId": 1, "answer": "9", "isCorrect": false },
+      { "answerId": 2, "answer": "11", "isCorrect": true },
+      { "answerId": 3, "answer": "10", "isCorrect": false }
     ]
   },
   {
     "questionId": 10,
     "question": "Wer schrieb den Roman 'Faust'?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Friedrich Schiller",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "Thomas Mann",
-        "isCorrect": false
-      },
-      {
-        "answerId": 2,
-        "answer": "Hermann Hesse",
-        "isCorrect": false
-      },
+      { "answerId": 0, "answer": "Friedrich Schiller", "isCorrect": false },
+      { "answerId": 1, "answer": "Thomas Mann", "isCorrect": false },
+      { "answerId": 2, "answer": "Hermann Hesse", "isCorrect": false },
       {
         "answerId": 3,
         "answer": "Johann Wolfgang von Goethe",
@@ -263,130 +107,50 @@
     "questionId": 11,
     "question": "Welches Edelgas wird oft in Leuchtreklamen verwendet, um eine rote oder orange Farbe zu erzeugen?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Argon",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "Neon",
-        "isCorrect": true
-      },
-      {
-        "answerId": 2,
-        "answer": "Xenon",
-        "isCorrect": false
-      },
-      {
-        "answerId": 3,
-        "answer": "Helium",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "Argon", "isCorrect": false },
+      { "answerId": 1, "answer": "Neon", "isCorrect": true },
+      { "answerId": 2, "answer": "Xenon", "isCorrect": false },
+      { "answerId": 3, "answer": "Helium", "isCorrect": false }
     ]
   },
   {
     "questionId": 12,
     "question": "Welches ist die höchste Erhebung Afrikas?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Mount Kenia",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "Mount Kilimandscharo",
-        "isCorrect": true
-      },
-      {
-        "answerId": 2,
-        "answer": "Mount Stanley",
-        "isCorrect": false
-      },
-      {
-        "answerId": 3,
-        "answer": "Ras Daschän",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "Mount Kenia", "isCorrect": false },
+      { "answerId": 1, "answer": "Mount Kilimandscharo", "isCorrect": true },
+      { "answerId": 2, "answer": "Mount Stanley", "isCorrect": false },
+      { "answerId": 3, "answer": "Ras Daschän", "isCorrect": false }
     ]
   },
   {
     "questionId": 13,
     "question": "In welchem Jahr begann der Zweite Weltkrieg?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "1936",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "1941",
-        "isCorrect": false
-      },
-      {
-        "answerId": 2,
-        "answer": "1939",
-        "isCorrect": true
-      },
-      {
-        "answerId": 3,
-        "answer": "1945",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "1936", "isCorrect": false },
+      { "answerId": 1, "answer": "1941", "isCorrect": false },
+      { "answerId": 2, "answer": "1939", "isCorrect": true },
+      { "answerId": 3, "answer": "1945", "isCorrect": false }
     ]
   },
   {
     "questionId": 14,
     "question": "Wer schrieb das Kinderbuch 'Pippi Langstrumpf'?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Michael Ende",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "Astrid Lindgren",
-        "isCorrect": true
-      },
-      {
-        "answerId": 2,
-        "answer": "Erich Kästner",
-        "isCorrect": false
-      },
-      {
-        "answerId": 3,
-        "answer": "Joanne K. Rowling",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "Michael Ende", "isCorrect": false },
+      { "answerId": 1, "answer": "Astrid Lindgren", "isCorrect": true },
+      { "answerId": 2, "answer": "Erich Kästner", "isCorrect": false },
+      { "answerId": 3, "answer": "Joanne K. Rowling", "isCorrect": false }
     ]
   },
   {
     "questionId": 15,
     "question": "Wie viele Löcher hat eine Standard-Golfrunde?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "9",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "16",
-        "isCorrect": false
-      },
-      {
-        "answerId": 2,
-        "answer": "18",
-        "isCorrect": true
-      },
-      {
-        "answerId": 3,
-        "answer": "20",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "9", "isCorrect": false },
+      { "answerId": 1, "answer": "16", "isCorrect": false },
+      { "answerId": 2, "answer": "18", "isCorrect": true },
+      { "answerId": 3, "answer": "20", "isCorrect": false }
     ]
   },
   {
@@ -419,411 +183,163 @@
     "questionId": 17,
     "question": "Wie viele Kontinente gibt es auf der Erde?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "5",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "6",
-        "isCorrect": false
-      },
-      {
-        "answerId": 2,
-        "answer": "7",
-        "isCorrect": true
-      },
-      {
-        "answerId": 3,
-        "answer": "8",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "5", "isCorrect": false },
+      { "answerId": 1, "answer": "6", "isCorrect": false },
+      { "answerId": 2, "answer": "7", "isCorrect": true },
+      { "answerId": 3, "answer": "8", "isCorrect": false }
     ]
   },
   {
     "questionId": 18,
     "question": "Was ist der Hauptbestandteil der Luft, die wir atmen?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Sauerstoff",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "Kohlendioxid",
-        "isCorrect": false
-      },
-      {
-        "answerId": 2,
-        "answer": "Stickstoff",
-        "isCorrect": true
-      },
-      {
-        "answerId": 3,
-        "answer": "Argon",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "Sauerstoff", "isCorrect": false },
+      { "answerId": 1, "answer": "Kohlendioxid", "isCorrect": false },
+      { "answerId": 2, "answer": "Stickstoff", "isCorrect": true },
+      { "answerId": 3, "answer": "Argon", "isCorrect": false }
     ]
   },
   {
     "questionId": 19,
     "question": "In welchem Land liegt die weltberühmte Inkastätte Macchu Picchu?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Kolumbien",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "Ecuador",
-        "isCorrect": false
-      },
-      {
-        "answerId": 2,
-        "answer": "Peru",
-        "isCorrect": true
-      },
-      {
-        "answerId": 3,
-        "answer": "Bolivien",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "Kolumbien", "isCorrect": false },
+      { "answerId": 1, "answer": "Ecuador", "isCorrect": false },
+      { "answerId": 2, "answer": "Peru", "isCorrect": true },
+      { "answerId": 3, "answer": "Bolivien", "isCorrect": false }
     ]
   },
   {
     "questionId": 20,
     "question": "Wer war der erste Präsident der Vereinigten Staaten von Amerika?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Thomas Jefferson",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "George Washington",
-        "isCorrect": true
-      },
-      {
-        "answerId": 2,
-        "answer": "Abraham Lincoln",
-        "isCorrect": false
-      },
-      {
-        "answerId": 3,
-        "answer": "John Adams",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "Thomas Jefferson", "isCorrect": false },
+      { "answerId": 1, "answer": "George Washington", "isCorrect": true },
+      { "answerId": 2, "answer": "Abraham Lincoln", "isCorrect": false },
+      { "answerId": 3, "answer": "John Adams", "isCorrect": false }
     ]
   },
   {
     "questionId": 21,
     "question": "Wer malte das berühmte Ölgemälde 'Mona Lisa'?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Vincent van Gogh",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "Pablo Picasso",
-        "isCorrect": false
-      },
-      {
-        "answerId": 2,
-        "answer": "Leonardo da Vinci",
-        "isCorrect": true
-      },
-      {
-        "answerId": 3,
-        "answer": "Claude Monet",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "Vincent van Gogh", "isCorrect": false },
+      { "answerId": 1, "answer": "Pablo Picasso", "isCorrect": false },
+      { "answerId": 2, "answer": "Leonardo da Vinci", "isCorrect": true },
+      { "answerId": 3, "answer": "Claude Monet", "isCorrect": false }
     ]
   },
   {
     "questionId": 22,
     "question": "Welche Sportart wird beim bekannten Turnier in Wimbledon gespielt?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Golf",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "Polo",
-        "isCorrect": false
-      },
-      {
-        "answerId": 2,
-        "answer": "Tennis",
-        "isCorrect": true
-      },
-      {
-        "answerId": 3,
-        "answer": "Kricket",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "Golf", "isCorrect": false },
+      { "answerId": 1, "answer": "Polo", "isCorrect": false },
+      { "answerId": 2, "answer": "Tennis", "isCorrect": true },
+      { "answerId": 3, "answer": "Kricket", "isCorrect": false }
     ]
   },
   {
     "questionId": 23,
     "question": "Wie lautet die mathematische Konstante für das Verhältnis des Umfangs eines Kreises zu seinem Durchmesser?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Eulersche Zahl (e)",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "Goldener Schnitt (Phi)",
-        "isCorrect": false
-      },
-      {
-        "answerId": 2,
-        "answer": "Pi (\\pi)",
-        "isCorrect": true
-      },
-      {
-        "answerId": 3,
-        "answer": "Grahams Zahl",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "Eulersche Zahl (e)", "isCorrect": false },
+      { "answerId": 1, "answer": "Goldener Schnitt (Phi)", "isCorrect": false },
+      { "answerId": 2, "answer": "Pi (π)", "isCorrect": true },
+      { "answerId": 3, "answer": "Grahams Zahl", "isCorrect": false }
     ]
   },
   {
     "questionId": 24,
     "question": "Was ist die offizielle Währung Japans?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Won",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "Renminbi",
-        "isCorrect": false
-      },
-      {
-        "answerId": 2,
-        "answer": "Yen",
-        "isCorrect": true
-      },
-      {
-        "answerId": 3,
-        "answer": "Dollar",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "Won", "isCorrect": false },
+      { "answerId": 1, "answer": "Renminbi", "isCorrect": false },
+      { "answerId": 2, "answer": "Yen", "isCorrect": true },
+      { "answerId": 3, "answer": "Dollar", "isCorrect": false }
     ]
   },
   {
     "questionId": 25,
-    "question": "In welchem Aggregatzustand befindet sich reines Wasser bei $20\\text{\\degree C}$ unter Normaldruck?",
+    "question": "In welchem Aggregatzustand befindet sich reines Wasser bei 20°C unter Normaldruck?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Fest (Eis)",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "Gasförmig (Dampf)",
-        "isCorrect": false
-      },
-      {
-        "answerId": 2,
-        "answer": "Plasma",
-        "isCorrect": false
-      },
-      {
-        "answerId": 3,
-        "answer": "Flüssig",
-        "isCorrect": true
-      }
+      { "answerId": 0, "answer": "Fest (Eis)", "isCorrect": false },
+      { "answerId": 1, "answer": "Gasförmig (Dampf)", "isCorrect": false },
+      { "answerId": 2, "answer": "Plasma", "isCorrect": false },
+      { "answerId": 3, "answer": "Flüssig", "isCorrect": true }
     ]
   },
   {
     "questionId": 26,
     "question": "Welches Land ist flächenmäßig das größte in Südamerika?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Argentinien",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "Brasilien",
-        "isCorrect": true
-      },
-      {
-        "answerId": 2,
-        "answer": "Kolumbien",
-        "isCorrect": false
-      },
-      {
-        "answerId": 3,
-        "answer": "Chile",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "Argentinien", "isCorrect": false },
+      { "answerId": 1, "answer": "Brasilien", "isCorrect": true },
+      { "answerId": 2, "answer": "Kolumbien", "isCorrect": false },
+      { "answerId": 3, "answer": "Chile", "isCorrect": false }
     ]
   },
   {
     "questionId": 27,
     "question": "In welchem Jahr endete der Erste Weltkrieg?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "1914",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "1918",
-        "isCorrect": true
-      },
-      {
-        "answerId": 2,
-        "answer": "1921",
-        "isCorrect": false
-      },
-      {
-        "answerId": 3,
-        "answer": "1917",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "1914", "isCorrect": false },
+      { "answerId": 1, "answer": "1918", "isCorrect": true },
+      { "answerId": 2, "answer": "1921", "isCorrect": false },
+      { "answerId": 3, "answer": "1917", "isCorrect": false }
     ]
   },
   {
     "questionId": 28,
     "question": "Wie nennt man das traditionelle japanische Wickelkleidungsstück?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Sari",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "Dirndl",
-        "isCorrect": false
-      },
-      {
-        "answerId": 2,
-        "answer": "Kimono",
-        "isCorrect": true
-      },
-      {
-        "answerId": 3,
-        "answer": "Hanbok",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "Sari", "isCorrect": false },
+      { "answerId": 1, "answer": "Dirndl", "isCorrect": false },
+      { "answerId": 2, "answer": "Kimono", "isCorrect": true },
+      { "answerId": 3, "answer": "Hanbok", "isCorrect": false }
     ]
   },
   {
     "questionId": 29,
     "question": "Wie oft findet die Fußball-Weltmeisterschaft der Männer (FIFA) statt?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Jährlich",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "Alle zwei Jahre",
-        "isCorrect": false
-      },
-      {
-        "answerId": 2,
-        "answer": "Alle vier Jahre",
-        "isCorrect": true
-      },
-      {
-        "answerId": 3,
-        "answer": "Alle fünf Jahre",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "Jährlich", "isCorrect": false },
+      { "answerId": 1, "answer": "Alle zwei Jahre", "isCorrect": false },
+      { "answerId": 2, "answer": "Alle vier Jahre", "isCorrect": true },
+      { "answerId": 3, "answer": "Alle fünf Jahre", "isCorrect": false }
     ]
   },
   {
     "questionId": 30,
     "question": "Welcher Technologie-Gigant wurde von Bill Gates und Paul Allen mitbegründet?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Apple",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "Microsoft",
-        "isCorrect": true
-      },
-      {
-        "answerId": 2,
-        "answer": "Google",
-        "isCorrect": false
-      },
-      {
-        "answerId": 3,
-        "answer": "IBM",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "Apple", "isCorrect": false },
+      { "answerId": 1, "answer": "Microsoft", "isCorrect": true },
+      { "answerId": 2, "answer": "Google", "isCorrect": false },
+      { "answerId": 3, "answer": "IBM", "isCorrect": false }
     ]
   },
   {
     "questionId": 31,
     "question": "Welche Sprache wird weltweit am häufigsten als Muttersprache gesprochen?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Spanisch",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "Englisch",
-        "isCorrect": false
-      },
-      {
-        "answerId": 2,
-        "answer": "Chinesisch (Mandarin)",
-        "isCorrect": true
-      },
-      {
-        "answerId": 3,
-        "answer": "Hindi",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "Spanisch", "isCorrect": false },
+      { "answerId": 1, "answer": "Englisch", "isCorrect": false },
+      { "answerId": 2, "answer": "Chinesisch (Mandarin)", "isCorrect": true },
+      { "answerId": 3, "answer": "Hindi", "isCorrect": false }
     ]
   },
   {
     "questionId": 32,
     "question": "Welche Funktion haben die Mitochondrien in einer Zelle?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Speicherung von Wasser",
-        "isCorrect": false
-      },
+      { "answerId": 0, "answer": "Speicherung von Wasser", "isCorrect": false },
       {
         "answerId": 1,
         "answer": "Steuerung der Zellteilung",
         "isCorrect": false
       },
-      {
-        "answerId": 2,
-        "answer": "Fotosynthese",
-        "isCorrect": false
-      },
+      { "answerId": 2, "answer": "Fotosynthese", "isCorrect": false },
       {
         "answerId": 3,
         "answer": "Energieerzeugung (Zellatmung)",
@@ -835,52 +351,20 @@
     "questionId": 33,
     "question": "Welches Meer trennt Europa von Nordafrika?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Nordsee",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "Mittelmeer",
-        "isCorrect": true
-      },
-      {
-        "answerId": 2,
-        "answer": "Schwarzes Meer",
-        "isCorrect": false
-      },
-      {
-        "answerId": 3,
-        "answer": "Rotes Meer",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "Nordsee", "isCorrect": false },
+      { "answerId": 1, "answer": "Mittelmeer", "isCorrect": true },
+      { "answerId": 2, "answer": "Schwarzes Meer", "isCorrect": false },
+      { "answerId": 3, "answer": "Rotes Meer", "isCorrect": false }
     ]
   },
   {
     "questionId": 34,
     "question": "Wer war der letzte Kaiser des Deutschen Reiches?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Otto von Bismarck",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "Friedrich III.",
-        "isCorrect": false
-      },
-      {
-        "answerId": 2,
-        "answer": "Wilhelm II.",
-        "isCorrect": true
-      },
-      {
-        "answerId": 3,
-        "answer": "Ludwig II.",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "Otto von Bismarck", "isCorrect": false },
+      { "answerId": 1, "answer": "Friedrich III.", "isCorrect": false },
+      { "answerId": 2, "answer": "Wilhelm II.", "isCorrect": true },
+      { "answerId": 3, "answer": "Ludwig II.", "isCorrect": false }
     ]
   },
   {
@@ -892,411 +376,159 @@
         "answer": "Johann Wolfgang von Goethe",
         "isCorrect": false
       },
-      {
-        "answerId": 1,
-        "answer": "William Shakespeare",
-        "isCorrect": true
-      },
-      {
-        "answerId": 2,
-        "answer": "Charles Dickens",
-        "isCorrect": false
-      },
-      {
-        "answerId": 3,
-        "answer": "Friedrich Schiller",
-        "isCorrect": false
-      }
+      { "answerId": 1, "answer": "William Shakespeare", "isCorrect": true },
+      { "answerId": 2, "answer": "Charles Dickens", "isCorrect": false },
+      { "answerId": 3, "answer": "Friedrich Schiller", "isCorrect": false }
     ]
   },
   {
     "questionId": 36,
     "question": "Wie viele Ringe hat das olympische Symbol?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "3",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "4",
-        "isCorrect": false
-      },
-      {
-        "answerId": 2,
-        "answer": "5",
-        "isCorrect": true
-      },
-      {
-        "answerId": 3,
-        "answer": "6",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "3", "isCorrect": false },
+      { "answerId": 1, "answer": "4", "isCorrect": false },
+      { "answerId": 2, "answer": "5", "isCorrect": true },
+      { "answerId": 3, "answer": "6", "isCorrect": false }
     ]
   },
   {
     "questionId": 37,
     "question": "Was ist die Quadratwurzel aus 144?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "10",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "11",
-        "isCorrect": false
-      },
-      {
-        "answerId": 2,
-        "answer": "12",
-        "isCorrect": true
-      },
-      {
-        "answerId": 3,
-        "answer": "14",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "10", "isCorrect": false },
+      { "answerId": 1, "answer": "11", "isCorrect": false },
+      { "answerId": 2, "answer": "12", "isCorrect": true },
+      { "answerId": 3, "answer": "14", "isCorrect": false }
     ]
   },
   {
     "questionId": 38,
     "question": "In welcher europäischen Stadt befindet sich der Eiffelturm?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "London",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "Rom",
-        "isCorrect": false
-      },
-      {
-        "answerId": 2,
-        "answer": "Paris",
-        "isCorrect": true
-      },
-      {
-        "answerId": 3,
-        "answer": "Madrid",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "London", "isCorrect": false },
+      { "answerId": 1, "answer": "Rom", "isCorrect": false },
+      { "answerId": 2, "answer": "Paris", "isCorrect": true },
+      { "answerId": 3, "answer": "Madrid", "isCorrect": false }
     ]
   },
   {
     "questionId": 39,
     "question": "Was misst ein Barometer?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Temperatur",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "Luftdruck",
-        "isCorrect": true
-      },
-      {
-        "answerId": 2,
-        "answer": "Niederschlagsmenge",
-        "isCorrect": false
-      },
-      {
-        "answerId": 3,
-        "answer": "Windgeschwindigkeit",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "Temperatur", "isCorrect": false },
+      { "answerId": 1, "answer": "Luftdruck", "isCorrect": true },
+      { "answerId": 2, "answer": "Niederschlagsmenge", "isCorrect": false },
+      { "answerId": 3, "answer": "Windgeschwindigkeit", "isCorrect": false }
     ]
   },
   {
     "questionId": 40,
     "question": "Was ist die Hauptstadt von Australien?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Sydney",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "Melbourne",
-        "isCorrect": false
-      },
-      {
-        "answerId": 2,
-        "answer": "Canberra",
-        "isCorrect": true
-      },
-      {
-        "answerId": 3,
-        "answer": "Perth",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "Sydney", "isCorrect": false },
+      { "answerId": 1, "answer": "Melbourne", "isCorrect": false },
+      { "answerId": 2, "answer": "Canberra", "isCorrect": true },
+      { "answerId": 3, "answer": "Perth", "isCorrect": false }
     ]
   },
   {
     "questionId": 41,
     "question": "Wann begann die Französische Revolution?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "1776",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "1789",
-        "isCorrect": true
-      },
-      {
-        "answerId": 2,
-        "answer": "1815",
-        "isCorrect": false
-      },
-      {
-        "answerId": 3,
-        "answer": "1848",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "1776", "isCorrect": false },
+      { "answerId": 1, "answer": "1789", "isCorrect": true },
+      { "answerId": 2, "answer": "1815", "isCorrect": false },
+      { "answerId": 3, "answer": "1848", "isCorrect": false }
     ]
   },
   {
     "questionId": 42,
     "question": "Wer komponierte die Oper 'Die Zauberflöte'?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Johann Sebastian Bach",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "Wolfgang Amadeus Mozart",
-        "isCorrect": true
-      },
-      {
-        "answerId": 2,
-        "answer": "Ludwig van Beethoven",
-        "isCorrect": false
-      },
-      {
-        "answerId": 3,
-        "answer": "Richard Wagner",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "Johann Sebastian Bach", "isCorrect": false },
+      { "answerId": 1, "answer": "Wolfgang Amadeus Mozart", "isCorrect": true },
+      { "answerId": 2, "answer": "Ludwig van Beethoven", "isCorrect": false },
+      { "answerId": 3, "answer": "Richard Wagner", "isCorrect": false }
     ]
   },
   {
     "questionId": 43,
     "question": "Welche Farbe hat die sogenannte 'Black Box' in einem Flugzeug?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Schwarz",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "Rot",
-        "isCorrect": false
-      },
-      {
-        "answerId": 2,
-        "answer": "Orange",
-        "isCorrect": true
-      },
-      {
-        "answerId": 3,
-        "answer": "Gelb",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "Schwarz", "isCorrect": false },
+      { "answerId": 1, "answer": "Rot", "isCorrect": false },
+      { "answerId": 2, "answer": "Orange", "isCorrect": true },
+      { "answerId": 3, "answer": "Gelb", "isCorrect": false }
     ]
   },
   {
     "questionId": 44,
     "question": "Welches Unternehmen entwickelte das mobile Betriebssystem 'Android'?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Apple",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "Microsoft",
-        "isCorrect": false
-      },
-      {
-        "answerId": 2,
-        "answer": "Google",
-        "isCorrect": true
-      },
-      {
-        "answerId": 3,
-        "answer": "Samsung",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "Apple", "isCorrect": false },
+      { "answerId": 1, "answer": "Microsoft", "isCorrect": false },
+      { "answerId": 2, "answer": "Google", "isCorrect": true },
+      { "answerId": 3, "answer": "Samsung", "isCorrect": false }
     ]
   },
   {
     "questionId": 45,
     "question": "Welcher Kontinent ist der kälteste und trockenste der Erde?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Asien",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "Südamerika",
-        "isCorrect": false
-      },
-      {
-        "answerId": 2,
-        "answer": "Arktis (Nordpol)",
-        "isCorrect": false
-      },
-      {
-        "answerId": 3,
-        "answer": "Antarktis",
-        "isCorrect": true
-      }
+      { "answerId": 0, "answer": "Asien", "isCorrect": false },
+      { "answerId": 1, "answer": "Südamerika", "isCorrect": false },
+      { "answerId": 2, "answer": "Arktis (Nordpol)", "isCorrect": false },
+      { "answerId": 3, "answer": "Antarktis", "isCorrect": true }
     ]
   },
   {
     "questionId": 46,
     "question": "Welches ist das leichteste chemische Element im Periodensystem?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Helium",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "Sauerstoff",
-        "isCorrect": false
-      },
-      {
-        "answerId": 2,
-        "answer": "Wasserstoff",
-        "isCorrect": true
-      },
-      {
-        "answerId": 3,
-        "answer": "Lithium",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "Helium", "isCorrect": false },
+      { "answerId": 1, "answer": "Sauerstoff", "isCorrect": false },
+      { "answerId": 2, "answer": "Wasserstoff", "isCorrect": true },
+      { "answerId": 3, "answer": "Lithium", "isCorrect": false }
     ]
   },
   {
     "questionId": 47,
     "question": "Was ist der längste Fluss der Welt?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Nil",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "Jangtse",
-        "isCorrect": false
-      },
-      {
-        "answerId": 2,
-        "answer": "Amazonas",
-        "isCorrect": true
-      },
-      {
-        "answerId": 3,
-        "answer": "Mississippi",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "Nil", "isCorrect": false },
+      { "answerId": 1, "answer": "Jangtse", "isCorrect": false },
+      { "answerId": 2, "answer": "Amazonas", "isCorrect": true },
+      { "answerId": 3, "answer": "Mississippi", "isCorrect": false }
     ]
   },
   {
     "questionId": 48,
     "question": "Wer war die erste Frau im Weltall?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Sally Ride",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "Swetlana Sawizkaja",
-        "isCorrect": false
-      },
-      {
-        "answerId": 2,
-        "answer": "Walentina Tereschkowa",
-        "isCorrect": true
-      },
-      {
-        "answerId": 3,
-        "answer": "Jelena Serowa",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "Sally Ride", "isCorrect": false },
+      { "answerId": 1, "answer": "Swetlana Sawizkaja", "isCorrect": false },
+      { "answerId": 2, "answer": "Walentina Tereschkowa", "isCorrect": true },
+      { "answerId": 3, "answer": "Jelena Serowa", "isCorrect": false }
     ]
   },
   {
     "questionId": 49,
     "question": "Welcher deutsche Schriftsteller ist bekannt für seinen Roman 'Buddenbrooks'?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "Hermann Hesse",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "Günter Grass",
-        "isCorrect": false
-      },
-      {
-        "answerId": 2,
-        "answer": "Theodor Fontane",
-        "isCorrect": false
-      },
-      {
-        "answerId": 3,
-        "answer": "Thomas Mann",
-        "isCorrect": true
-      }
+      { "answerId": 0, "answer": "Hermann Hesse", "isCorrect": false },
+      { "answerId": 1, "answer": "Günter Grass", "isCorrect": false },
+      { "answerId": 2, "answer": "Theodor Fontane", "isCorrect": false },
+      { "answerId": 3, "answer": "Thomas Mann", "isCorrect": true }
     ]
   },
   {
     "questionId": 50,
     "question": "In welchem Land wurde die Kampfsportart Judo erfunden?",
     "answers": [
-      {
-        "answerId": 0,
-        "answer": "China",
-        "isCorrect": false
-      },
-      {
-        "answerId": 1,
-        "answer": "Südkorea",
-        "isCorrect": false
-      },
-      {
-        "answerId": 2,
-        "answer": "Japan",
-        "isCorrect": true
-      },
-      {
-        "answerId": 3,
-        "answer": "Thailand",
-        "isCorrect": false
-      }
+      { "answerId": 0, "answer": "China", "isCorrect": false },
+      { "answerId": 1, "answer": "Südkorea", "isCorrect": false },
+      { "answerId": 2, "answer": "Japan", "isCorrect": true },
+      { "answerId": 3, "answer": "Thailand", "isCorrect": false }
     ]
   },
   {
