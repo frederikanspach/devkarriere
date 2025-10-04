@@ -577,17 +577,17 @@
     "answers": [
       {
         "answerId": 0,
-        "answer": "Eulersche Zahl ($e$)",
+        "answer": "Eulersche Zahl (e)",
         "isCorrect": false
       },
       {
         "answerId": 1,
-        "answer": "Goldener Schnitt ($\\Phi$)",
+        "answer": "Goldener Schnitt (Phi)",
         "isCorrect": false
       },
       {
         "answerId": 2,
-        "answer": "Pi ($\\pi$)",
+        "answer": "Pi (\\pi)",
         "isCorrect": true
       },
       {
@@ -625,7 +625,7 @@
   },
   {
     "questionId": 25,
-    "question": "In welchem Aggregatzustand befindet sich reines Wasser bei $20^circ \\text{C}$ unter Normaldruck?",
+    "question": "In welchem Aggregatzustand befindet sich reines Wasser bei $20\\text{\\degree C}$ unter Normaldruck?",
     "answers": [
       {
         "answerId": 0,
@@ -1903,22 +1903,22 @@
     "answers": [
       {
         "answerId": 0,
-        "answer": "$30.000$ km/s",
+        "answer": "30.000 km/s",
         "isCorrect": false
       },
       {
         "answerId": 1,
-        "answer": "$300.000$ km/s",
+        "answer": "300.000 km/s",
         "isCorrect": true
       },
       {
         "answerId": 2,
-        "answer": "$3.000.000$ km/s",
+        "answer": "3.000.000 km/s",
         "isCorrect": false
       },
       {
         "answerId": 3,
-        "answer": "$3.000$ km/s",
+        "answer": "3.000 km/s",
         "isCorrect": false
       }
     ]
@@ -2397,22 +2397,22 @@
     "answers": [
       {
         "answerId": 0,
-        "answer": "$90^circ$",
+        "answer": "$90\\text{\\degree}$",
         "isCorrect": false
       },
       {
         "answerId": 1,
-        "answer": "$180^circ$",
+        "answer": "$180\\text{\\degree}$",
         "isCorrect": true
       },
       {
         "answerId": 2,
-        "answer": "$270^circ$",
+        "answer": "$270\\text{\\degree}$",
         "isCorrect": false
       },
       {
         "answerId": 3,
-        "answer": "$360^circ$",
+        "answer": "$360\\text{\\degree}$",
         "isCorrect": false
       }
     ]
