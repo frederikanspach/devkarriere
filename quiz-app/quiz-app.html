@@ -9,26 +9,41 @@
   </head>
   <body>
     <main>
-      <section id="question-container">
-        <div class="question">Fragen werden geladen...</div>
-        <div class="answer-container">
-          <button class="btn btn-answer" id="answer-one"></button>
-          <button class="btn btn-answer" id="answer-two"></button>
-          <button class="btn btn-answer" id="answer-three"></button>
-          <button class="btn btn-answer" id="answer-four"></button>
-        </div>
-      </section>
+      <div class="upper-question-container">
+        <section id="question-container">
+          <div class="question">Fragen werden geladen...</div>
+          <div class="answer-container">
+            <button class="btn btn-answer" id="answer-one"></button>
+            <button class="btn btn-answer" id="answer-two"></button>
+            <button class="btn btn-answer" id="answer-three"></button>
+            <button class="btn btn-answer" id="answer-four"></button>
+          </div>
+        </section>
 
-      <section class="nav-container">
-        <div>
-          <button
-            class="btn btn-nav"
-            onclick="findCorrectAnswerButton()"
-            id="solution"
-          >
-            Lösung
+        <section class="nav-container">
+          <div>
+            <button class="btn btn-nav" onclick="solution()" id="solution">
+              Lösung
+            </button>
+            <button class="btn btn-nav" onclick="appendQuestion()">
+              Weiter
+            </button>
+          </div>
+        </section>
+      </div>
+
+      <section class="score-container">
+        <div class="score">
+          Punkte: Richtig: 0, Falsch: 0, Lösung: 0, Gesamt: 0
+        </div>
+        <div class="options">
+          <button class="option" onclick="resetScore()">
+            Punktestand Löschen
           </button>
-          <button class="btn btn-nav" onclick="appendQuestion()">Weiter</button>
+          |
+          <button class="option" onclick="deleteLocalStorage()">
+            Lokalen Speicher löschen
+          </button>
         </div>
       </section>
     </main>

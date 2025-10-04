@@ -4,9 +4,13 @@
 const QUESTION_FILE_PATH = "question.json";
 const QUESTION_STORAGE_KEY = "quizQuestions";
 const ID_STORAGE_KEY = "quizIds";
+const SCORE_STORAGE_KEY = "quizScore";
 let questionArray = [];
 let questionArrayIds = [];
 let currentQuestionObject = 0;
+let correctCount = 0;
+let incorrectCount = 0;
+let solutionCount = 0;
 
 // Listener Load Page
 document.addEventListener("DOMContentLoaded", initializeQuiz);
@@ -39,12 +43,46 @@ function loadQuestionsFromLocalStorage() {
 }
 
 // In das LocalStorage schreiben
-function saveToLocalStorage() {
+function saveQuestionsToLocalStorage() {
   console.log("Speichere Daten im LocalStorage.");
   localStorage.setItem(QUESTION_STORAGE_KEY, JSON.stringify(questionArray));
 }
 
+// Punkte in das LocalStorage schreiben
+function saveScoreToLocalStorage() {
+  console.log("Speichere Punktestand im LocalStorage.");
+  localStorage.setItem(QUESTION_STORAGE_KEY, JSON.stringify(questionArray));
+
+  const scoreData = {
+    correct: correctCount,
+    incorrect: incorrectCount,
+    solution: solutionCount,
+  };
+
+  localStorage.setItem(SCORE_STORAGE_KEY, JSON.stringify(scoreData));
+}
+
+// Punkte aus dem LocalStorage schreiben
+function loadScoreFromLocalStorage() {
+  const loadedScore = localStorage.getItem(SCORE_STORAGE_KEY);
+  if (loadedScore) {
+    const scoreData = JSON.parse(loadedScore);
+    correctCount = scoreData.correct;
+    incorrectCount = scoreData.incorrect;
+    solutionCount = scoreData.solution;
+    console.log("Punktestand aus LocalStorage geladen.");
+  } else {
+    // Starte mit 0, falls kein Score gefunden
+    correctCount = 0;
+    incorrectCount = 0;
+    solutionCount = 0;
+  }
+}
+
+// Ladelogik
 async function loadQuizData() {
+  loadScoreFromLocalStorage();
+
   // 1. Versuch: Aus LocalStorage laden
   questionArray = loadQuestionsFromLocalStorage();
 
@@ -58,7 +96,7 @@ async function loadQuizData() {
     const loadedQuestions = await loadQuestionsFromFile();
     if (loadedQuestions.length > 0) {
       questionArray = loadedQuestions;
-      saveToLocalStorage();
+      saveQuestionsToLocalStorage();
     } else {
       console.error(
         "FEHLER: Quiz konnte nicht initialisiert werden, da keine Fragen geladen wurden."
@@ -191,8 +229,6 @@ function createButton(answerIndex) {
   const newButton = document.createElement("button");
   newButton.classList.add("btn", "btn-answer");
   newButton.dataset.answerIndex = answerIndex;
-  // @@ Listener eingerichtet
-  // newButton.setAttribute("onclick", `checkAnswer()`);
   newButton.textContent = currentQuestionObject.answers[answerIndex].answer;
 
   return newButton;
@@ -203,8 +239,14 @@ function checkAnswer(answerIndex, button) {
   if (currentQuestionObject.answers[answerIndex].isCorrect) {
     answerCorrect(button);
     deactivateAnswerButtons();
+
+    correctCount++;
+    updateScoreDisplay();
   } else {
     answerIncorrect(button);
+
+    incorrectCount++;
+    updateScoreDisplay();
   }
 }
 
@@ -221,6 +263,12 @@ function answerIncorrect(buttonId) {
 
   // Suche den richtigen Antwort-Button
   findCorrectAnswerButton();
+}
+
+function solution() {
+  findCorrectAnswerButton();
+  solutionCount++;
+  updateScoreDisplay();
 }
 
 // Finde die richtige Antwort
@@ -252,4 +300,36 @@ function deactivateAnswerButtons() {
   answerButtons.forEach((button) => {
     button.disabled = true;
   });
+}
+
+function updateScoreDisplay() {
+  const scoreTotalCount = correctCount + incorrectCount + solutionCount;
+
+  const newScoreDiv = document.createElement("div");
+  newScoreDiv.classList.add("score");
+  newScoreDiv.textContent = `Punkte: Richtig: ${correctCount}, Falsch: ${incorrectCount}, Lösung: ${solutionCount}, Gesamt: ${scoreTotalCount}`;
+
+  let [oldScoreDiv] = document.getElementsByClassName("score");
+  oldScoreDiv.replaceWith(newScoreDiv);
+}
+
+function resetScore() {
+  correctCount = 0;
+  incorrectCount = 0;
+  solutionCount = 0;
+
+  saveScoreToLocalStorage();
+  updateScoreDisplay();
+}
+
+function deleteLocalStorage() {
+  const isConfirmed = confirm(
+    "Es werden alle Daten aus dem Local Storage entfernt (Fragen, IDs, Punktestand) gelöscht!\n\n Fortfahren?"
+  );
+
+  if (isConfirmed) {
+    localStorage.clear();
+    alert("Der gesamte lokale Speicher wurde erfolgreich gelöscht.");
+    window.location.reload();
+  }
 }
