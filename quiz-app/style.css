@@ -34,14 +34,11 @@ main {
   font-size: medium;
   padding: 1rem;
 }
-
-.btn:hover {
-  background-color: #d5c093;
+.btn:active {
+  transform: none;
 }
 
 button:disabled:hover {
-  background-color: #cccccc;
-  color: #666666;
   transform: none;
 }
 
@@ -88,7 +85,8 @@ button:disabled:hover {
     margin: 3rem 2rem;
   }
 
-  *:hover {
+  .btn:hover {
+    background-color: #d5c093;
     transform: initial;
   }
 }
