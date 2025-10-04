@@ -1,6 +1,5 @@
 "use strict";
 
-// Globale Variablen
 const QUESTION_FILE_PATH = "question.json";
 const QUESTION_STORAGE_KEY = "quizQuestions";
 const ID_STORAGE_KEY = "quizIds";
@@ -32,7 +31,6 @@ async function loadQuestionsFromFile() {
   }
 }
 
-// Aus dem LocalStorage laden
 function loadQuestionsFromLocalStorage() {
   console.log("Lade Daten aus LocalStorage.");
   const loadedQuestions = JSON.parse(
@@ -42,13 +40,11 @@ function loadQuestionsFromLocalStorage() {
   return loadedQuestions ? loadedQuestions : [];
 }
 
-// In das LocalStorage schreiben
 function saveQuestionsToLocalStorage() {
   console.log("Speichere Daten im LocalStorage.");
   localStorage.setItem(QUESTION_STORAGE_KEY, JSON.stringify(questionArray));
 }
 
-// Punkte in das LocalStorage schreiben
 function saveScoreToLocalStorage() {
   console.log("Speichere Punktestand im LocalStorage.");
   localStorage.setItem(QUESTION_STORAGE_KEY, JSON.stringify(questionArray));
@@ -62,7 +58,6 @@ function saveScoreToLocalStorage() {
   localStorage.setItem(SCORE_STORAGE_KEY, JSON.stringify(scoreData));
 }
 
-// Punkte aus dem LocalStorage schreiben
 function loadScoreFromLocalStorage() {
   const loadedScore = localStorage.getItem(SCORE_STORAGE_KEY);
   if (loadedScore) {
@@ -83,7 +78,7 @@ function loadScoreFromLocalStorage() {
 async function loadQuizData() {
   loadScoreFromLocalStorage();
 
-  // 1. Versuch: Aus LocalStorage laden
+  // Versuche aus LocalStorage zu laden
   questionArray = loadQuestionsFromLocalStorage();
 
   if (questionArray.length > 0) {
@@ -92,7 +87,7 @@ async function loadQuizData() {
     return;
   } else {
     console.log("Keine Daten geladen.");
-    // 2. Fallback: Von der JSON-Datei laden
+    // Fallback: Von der JSON-Datei laden
     const loadedQuestions = await loadQuestionsFromFile();
     if (loadedQuestions.length > 0) {
       questionArray = loadedQuestions;
@@ -112,16 +107,16 @@ function loadQuestionIdsfromLocalStorage() {
   if (loadedIds) {
     questionArrayIds = loadedIds;
   } else {
-    writeNewQuestionIdsfromLocalStorage();
+    writeNewQuestionIdsToLocalStorage();
   }
 }
 
-function writeNewQuestionIdsfromLocalStorage() {
+// Schreibe frischen questionArrayIds
+function writeNewQuestionIdsToLocalStorage() {
   for (let i = 0; i < questionArray.length; i++) {
     questionArrayIds.push(i);
   }
 
-  // Schreibe frischen questionArrayIds
   localStorage.setItem(ID_STORAGE_KEY, JSON.stringify(questionArrayIds));
   console.log("Schreibe neue Quiz-IDs.");
 }
@@ -141,7 +136,7 @@ async function initializeQuiz() {
 // Zufällige Frage auswählen
 function randomQuestion() {
   if (questionArrayIds.length === 0) {
-    writeNewQuestionIdsfromLocalStorage();
+    writeNewQuestionIdsToLocalStorage();
   }
 
   const randomQuestionIdsPosition = Math.floor(
@@ -221,8 +216,10 @@ function appendQuestion() {
   const oldQuestionContainer = document.getElementById("question-container");
   oldQuestionContainer.replaceWith(newQuestionContainer);
 
+  // Den Lösungsbutton setzen und disabled entfernen!
   const buttonSolution = document.getElementById("solution");
-  buttonSolution.setAttribute("onclick", "findCorrectAnswerButton()");
+  buttonSolution.setAttribute("onclick", "solution()");
+  buttonSolution.removeAttribute("disabled");
 }
 
 function createButton(answerIndex) {
@@ -234,7 +231,7 @@ function createButton(answerIndex) {
   return newButton;
 }
 
-//  Prüfe ob die Antwort richtig oder Falsch war
+//  Prüfe ob die Antwort richtig oder Falsch ist
 function checkAnswer(answerIndex, button) {
   if (currentQuestionObject.answers[answerIndex].isCorrect) {
     answerCorrect(button);
@@ -265,10 +262,11 @@ function answerIncorrect(buttonId) {
   findCorrectAnswerButton();
 }
 
+// Lösungsfunktion um den Zähler hoch zu zählen
 function solution() {
-  findCorrectAnswerButton();
   solutionCount++;
   updateScoreDisplay();
+  findCorrectAnswerButton();
 }
 
 // Finde die richtige Antwort
@@ -293,13 +291,16 @@ function findCorrectAnswerButton() {
 }
 
 function deactivateAnswerButtons() {
-  // Wähle alle Buttons mit der Klasse 'btn-answer'
   const answerButtons = document.querySelectorAll(".btn-answer");
 
-  // Gehe durch alle Buttons und deaktiviere sie
+  // Gehe durch den Buttons-Array und deaktiviere alle
   answerButtons.forEach((button) => {
     button.disabled = true;
   });
+
+  // Auch den Lösungs-Button deaktivieren (damit der Counter nicht hochgezählt wird)
+  const solutionButton = document.getElementById("solution");
+  solutionButton.disabled = true;
 }
 
 function updateScoreDisplay() {
