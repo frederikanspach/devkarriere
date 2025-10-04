@@ -13,7 +13,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 90vh;
+  height: 90lvh;
   background-color: #d1e4f0;
   border-radius: 10px;
   padding: 1rem;
