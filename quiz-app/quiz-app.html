@@ -10,7 +10,7 @@
   <body>
     <main>
       <section id="question-container">
-        <div class="question">Fragen werden gelasen...</div>
+        <div class="question">Fragen werden geladen...</div>
         <div class="answer-container">
           <button class="btn btn-answer" id="answer-one"></button>
           <button class="btn btn-answer" id="answer-two"></button>
@@ -21,7 +21,11 @@
 
       <section class="nav-container">
         <div>
-          <button class="btn btn-nav" onclick="checkAnswer(99)" id="solution">
+          <button
+            class="btn btn-nav"
+            onclick="findCorrectAnswerButton()"
+            id="solution"
+          >
             Lösung
           </button>
           <button class="btn btn-nav" onclick="appendQuestion()">Weiter</button>

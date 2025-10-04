@@ -1,151 +1,174 @@
 "use strict";
 
-// Fragen-Array
-let questionArray = [
-  {
-    question: "Was ist die Hauptstadt von Deutschland?",
-    answer: ["Berlin", "Hamburg", "München", "Hannover"],
-  },
-  {
-    question: "Welcher Fluss fließt durch die ägyptische Hauptstadt Kairo?",
-    answer: ["Nil", "Rhein", "Donau", "Themse"],
-  },
-  {
-    question:
-      "Wie viele Spieler hat eine Eishockeymannschaft auf dem Eis (ohne Torwart)?",
-    answer: ["5", "4", "6", "7"],
-  },
-  {
-    question: "Was ist das flächenmäßig kleinste Land der Welt?",
-    answer: ["Vatikanstadt", "Monaco", "San Marino", "Liechtenstein"],
-  },
-  {
-    question: "Wer schrieb die weltberühmte Fabel 'Der kleine Prinz'?",
-    answer: [
-      "Antoine de Saint-Exupéry",
-      "Albert Camus",
-      "Victor Hugo",
-      "Jules Verne",
-    ],
-  },
-  {
-    question: "Welches ist das einzige Säugetier, das fliegen kann?",
-    answer: ["Fledermaus", "Gleithörnchen", "Flughund", "Vogelspinne"],
-  },
-  {
-    question: "Was ist der höchste Berg Afrikas?",
-    answer: ["Kilimandscharo", "Mount Kenia", "Mount Everest", "Mont Blanc"],
-  },
-  {
-    question: "In welchem Jahr fiel die Berliner Mauer?",
-    answer: ["1989", "1988", "1990", "1991"],
-  },
-  {
-    question: "Welches Metall hat das chemische Symbol 'Au'?",
-    answer: ["Gold", "Silber", "Eisen", "Aluminium"],
-  },
-  {
-    question:
-      "Welche Farbe hat der Hauptdarsteller in der Zeichentrickserie 'Die Simpsons'?",
-    answer: ["Gelb", "Blau", "Grün", "Orange"],
-  },
-  {
-    question: "Welcher Komponist ist bekannt für die 'Mondscheinsonate'?",
-    answer: [
-      "Ludwig van Beethoven",
-      "Wolfgang Amadeus Mozart",
-      "Johann Sebastian Bach",
-      "Frédéric Chopin",
-    ],
-  },
-];
-
-let correctButton;
+// Globale Variablen
+const QUESTION_FILE_PATH = "question.json";
+const QUESTION_STORAGE_KEY = "quizQuestions";
+const ID_STORAGE_KEY = "quizIds";
+let questionArray = [];
+let questionArrayIds = [];
+let currentQuestionObject = 0;
 
 // Listener Load Page
-document.addEventListener("DOMContentLoaded", appendQuestion);
+document.addEventListener("DOMContentLoaded", initializeQuiz);
+
+async function loadQuestionsFromFile() {
+  console.log("Laden Daten aus der JSON-Datei.");
+  try {
+    const response = await fetch(QUESTION_FILE_PATH);
+
+    if (!response.ok) {
+      throw new Error(`Fehler beim Laden: HTTP Status ${response.status}.`);
+    }
+
+    // .json() parst die Antwort und löst Fehler bei ungültigem JSON aus
+    return await response.json();
+  } catch (error) {
+    console.error("Netzwerkfehler oder ungültiges JSON:", error.message);
+    return [];
+  }
+}
+
+// Aus dem LocalStorage laden
+function loadQuestionsFromLocalStorage() {
+  console.log("Lade Daten aus LocalStorage.");
+  const loadedQuestions = JSON.parse(
+    localStorage.getItem(QUESTION_STORAGE_KEY)
+  );
+
+  return loadedQuestions ? loadedQuestions : [];
+}
+
+// In das LocalStorage schreiben
+function saveToLocalStorage() {
+  console.log("Speichere Daten im LocalStorage.");
+  localStorage.setItem(QUESTION_STORAGE_KEY, JSON.stringify(questionArray));
+}
+
+async function loadQuizData() {
+  // 1. Versuch: Aus LocalStorage laden
+  questionArray = loadQuestionsFromLocalStorage();
+
+  if (questionArray.length > 0) {
+    console.log("Quizdaten erfolgreich aus LocalStorage geladen.");
+    console.log(questionArray);
+    return;
+  } else {
+    console.log("Keine Daten geladen.");
+    // 2. Fallback: Von der JSON-Datei laden
+    const loadedQuestions = await loadQuestionsFromFile();
+    if (loadedQuestions.length > 0) {
+      questionArray = loadedQuestions;
+      saveToLocalStorage();
+    } else {
+      console.error(
+        "FEHLER: Quiz konnte nicht initialisiert werden, da keine Fragen geladen wurden."
+      );
+    }
+  }
+}
+
+function loadQuestionIdsfromLocalStorage() {
+  console.log("Lade Quiz-IDs.");
+  const loadedIds = JSON.parse(localStorage.getItem(ID_STORAGE_KEY));
+
+  if (loadedIds) {
+    questionArrayIds = loadedIds;
+  } else {
+    writeNewQuestionIdsfromLocalStorage();
+  }
+}
+
+function writeNewQuestionIdsfromLocalStorage() {
+  for (let i = 0; i < questionArray.length; i++) {
+    questionArrayIds.push(i);
+  }
+
+  // Schreibe frischen questionArrayIds
+  localStorage.setItem(ID_STORAGE_KEY, JSON.stringify(questionArrayIds));
+  console.log("Schreibe neue Quiz-IDs.");
+}
+
+// Starte die Initialisierung beim Laden der Seite
+async function initializeQuiz() {
+  // Quiz-Daten laden
+  await loadQuizData();
+
+  // Quiz-IDs laden oder erzeugen
+  loadQuestionIdsfromLocalStorage();
+
+  // Quiz starten
+  appendQuestion();
+}
 
 // Zufällige Frage auswählen
 function randomQuestion() {
-  const questionHash =
-    questionArray[Math.floor(Math.random() * questionArray.length)];
-  return questionHash;
-}
-
-// Antworten mixen, richtigen Button speichern uns Ausgabe bauen
-function appendQuestion() {
-  const questionHash = randomQuestion();
-  const question = questionHash.question;
-
-  let rndArray = [0, 1, 2, 3];
-  let randomIndex;
-
-  randomIndex = Math.floor(Math.random() * rndArray.length);
-  const [positionOne] = rndArray.splice(randomIndex, 1);
-
-  randomIndex = Math.floor(Math.random() * rndArray.length);
-  const [positionTwo] = rndArray.splice(randomIndex, 1);
-
-  randomIndex = Math.floor(Math.random() * rndArray.length);
-  const [positionThree] = rndArray.splice(randomIndex, 1);
-
-  randomIndex = Math.floor(Math.random() * rndArray.length);
-  const [positionFour] = rndArray.splice(randomIndex, 1);
-
-  // Richtigen Button speichern
-  if (positionOne === 0) {
-    correctButton = "answer-one";
-  } else if (positionTwo === 0) {
-    correctButton = "answer-two";
-  } else if (positionThree === 0) {
-    correctButton = "answer-three";
-  } else if (positionFour === 0) {
-    correctButton = "answer-four";
+  if (questionArrayIds.length === 0) {
+    writeNewQuestionIdsfromLocalStorage();
   }
 
+  const randomQuestionIdsPosition = Math.floor(
+    Math.random() * questionArrayIds.length
+  );
+
+  const randomQuestionIndex = questionArrayIds[randomQuestionIdsPosition];
+
+  questionArrayIds.splice(randomQuestionIdsPosition, 1);
+
+  // In LocalStorage speichern
+  localStorage.setItem(ID_STORAGE_KEY, JSON.stringify(questionArrayIds));
+
+  return randomQuestionIndex;
+}
+
+// Knuth-Shuffle für die Antworten (von Google)
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
+// Fragen und Antworten posten
+function appendQuestion() {
+  const questionId = randomQuestion();
+  currentQuestionObject = questionArray[questionId];
+
+  let answerIndexArray = [0, 1, 2, 3];
+  shuffleArray(answerIndexArray);
+
   // Ausgabe Bauen!
-  const newQuestion = document.createElement("div");
-  newQuestion.classList.add("question");
-  newQuestion.textContent = question;
+  const newQuestionDiv = document.createElement("div");
+  newQuestionDiv.classList.add("question");
+  newQuestionDiv.textContent = currentQuestionObject.question;
 
   const newAnswerContainer = document.createElement("div");
   newAnswerContainer.classList.add("answer-container");
 
-  const newButtonOne = document.createElement("button");
-  newButtonOne.classList.add("btn", "btn-answer");
-  newButtonOne.setAttribute(
-    "onclick",
-    `checkAnswer(${positionOne}, "answer-one")`
-  );
-  newButtonOne.textContent = questionHash.answer[positionOne];
+  // Buttons bauen
+  const newButtonOne = createButton(answerIndexArray[0]);
   newButtonOne.id = "answer-one";
+  newButtonOne.addEventListener("click", () => {
+    checkAnswer(answerIndexArray[0], "answer-one");
+  });
 
-  const newButtonTwo = document.createElement("button");
-  newButtonTwo.classList.add("btn", "btn-answer");
-  newButtonTwo.setAttribute(
-    "onclick",
-    `checkAnswer(${positionTwo}, "answer-two")`
-  );
-  newButtonTwo.textContent = questionHash.answer[positionTwo];
+  const newButtonTwo = createButton(answerIndexArray[1]);
   newButtonTwo.id = "answer-two";
+  newButtonTwo.addEventListener("click", () => {
+    checkAnswer(answerIndexArray[1], "answer-two");
+  });
 
-  const newButtonThree = document.createElement("button");
-  newButtonThree.classList.add("btn", "btn-answer");
-  newButtonThree.setAttribute(
-    "onclick",
-    `checkAnswer(${positionThree}, "answer-three")`
-  );
-  newButtonThree.textContent = questionHash.answer[positionThree];
+  const newButtonThree = createButton(answerIndexArray[2]);
   newButtonThree.id = "answer-three";
+  newButtonThree.addEventListener("click", () => {
+    checkAnswer(answerIndexArray[2], "answer-three");
+  });
 
-  const newButtonFour = document.createElement("button");
-  newButtonFour.classList.add("btn", "btn-answer");
-  newButtonFour.setAttribute(
-    "onclick",
-    `checkAnswer(${positionFour}, "answer-four")`
-  );
-  newButtonFour.textContent = questionHash.answer[positionFour];
+  const newButtonFour = createButton(answerIndexArray[3]);
   newButtonFour.id = "answer-four";
+  newButtonFour.addEventListener("click", () => {
+    checkAnswer(answerIndexArray[3], "answer-four");
+  });
 
   newAnswerContainer.appendChild(newButtonOne);
   newAnswerContainer.appendChild(newButtonTwo);
@@ -154,7 +177,7 @@ function appendQuestion() {
 
   const newQuestionContainer = document.createElement("div");
   newQuestionContainer.id = "question-container";
-  newQuestionContainer.appendChild(newQuestion);
+  newQuestionContainer.appendChild(newQuestionDiv);
   newQuestionContainer.appendChild(newAnswerContainer);
 
   const oldQuestionContainer = document.getElementById("question-container");
@@ -162,45 +185,72 @@ function appendQuestion() {
   console.log(newQuestionContainer);
 
   const buttonSolution = document.getElementById("solution");
-  buttonSolution.setAttribute("onclick", "checkAnswer(99)");
+  buttonSolution.setAttribute("onclick", "findCorrectAnswerButton()");
+}
+
+function createButton(answerIndex) {
+  const newButton = document.createElement("button");
+  newButton.classList.add("btn", "btn-answer");
+  newButton.dataset.answerIndex = answerIndex;
+  // @@ Listener eingerichtet
+  // newButton.setAttribute("onclick", `checkAnswer()`);
+  newButton.textContent = currentQuestionObject.answers[answerIndex].answer;
+
+  return newButton;
 }
 
 //  Prüfe ob die Antwort richtig oder Falsch war
-function checkAnswer(answer, elementId) {
-  // Antwort 0 ist immer richtig!
-  if (answer === 0) {
-    answerCorrect(elementId);
-    // Wenn die Lösung gefordert wird
-  } else if (answer === 99) {
-    answerCorrect(correctButton);
-    // Wenn die Antwort falsch war
+function checkAnswer(answerIndex, button) {
+  if (currentQuestionObject.answers[answerIndex].isCorrect) {
+    answerCorrect(button);
+    deactivateAnswerButtons();
   } else {
-    answerIncorrect(elementId);
+    answerIncorrect(button);
   }
-
-  // Entferne die onclick-Funktionen
-  const buttonOne = document.getElementById("answer-one");
-  buttonOne.removeAttribute("onclick");
-  const buttonTwo = document.getElementById("answer-two");
-  buttonTwo.removeAttribute("onclick");
-  const buttonThree = document.getElementById("answer-three");
-  buttonThree.removeAttribute("onclick");
-  const buttonFour = document.getElementById("answer-four");
-  buttonFour.removeAttribute("onclick");
-  const buttonSolution = document.getElementById("solution");
-  buttonSolution.removeAttribute("onclick");
 }
 
 // Nur korrekten Button markieren
-function answerCorrect(elementId) {
-  const button = document.getElementById(elementId);
+function answerCorrect(buttonId) {
+  const button = document.getElementById(buttonId);
   button.classList.add("correct");
 }
 
 // Falschen und korrekten Button markieren
-function answerIncorrect(elementId) {
-  const button = document.getElementById(elementId);
+function answerIncorrect(buttonId) {
+  const button = document.getElementById(buttonId);
   button.classList.add("incorrect");
-  const buttonCorrect = document.getElementById(correctButton);
-  buttonCorrect.classList.add("correct");
+
+  // Suche den richtigen Antwort-Button
+  findCorrectAnswerButton();
+}
+
+// Finde die richtige Antwort
+function findCorrectAnswerIndex() {
+  for (let i = 0; i < currentQuestionObject.answers.length; i++) {
+    if (currentQuestionObject.answers[i].isCorrect) {
+      return i;
+    }
+  }
+}
+
+// Finde den richtigen Antwort-Button
+function findCorrectAnswerButton() {
+  const correctIndex = findCorrectAnswerIndex();
+
+  const correctButton = document.querySelector(
+    `.btn-answer[data-answer-index="${correctIndex}"]`
+  );
+
+  answerCorrect(correctButton.id);
+  deactivateAnswerButtons();
+}
+
+function deactivateAnswerButtons() {
+  // Wähle alle Buttons mit der Klasse 'btn-answer'
+  const answerButtons = document.querySelectorAll(".btn-answer");
+
+  // Gehe durch alle Buttons und deaktiviere sie
+  answerButtons.forEach((button) => {
+    button.disabled = true;
+  });
 }

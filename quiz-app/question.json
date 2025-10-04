@@ -1,0 +1,106 @@
+[
+  {
+    "questionId": 1,
+    "question": "Was ist die Hauptstadt von Deutschland?",
+    "answers": [
+      { "answerId": 0, "answer": "Hamburg", "isCorrect": false },
+      { "answerId": 1, "answer": "München", "isCorrect": false },
+      { "answerId": 2, "answer": "Berlin", "isCorrect": true },
+      { "answerId": 3, "answer": "Köln", "isCorrect": false }
+    ]
+  },
+  {
+    "questionId": 2,
+    "question": "Welcher Fluss fließt durch die ägyptische Hauptstadt Kairo?",
+    "answers": [
+      { "answerId": 0, "answer": "Rhein", "isCorrect": false },
+      { "answerId": 1, "answer": "Donau", "isCorrect": false },
+      { "answerId": 2, "answer": "Nil", "isCorrect": true },
+      { "answerId": 3, "answer": "Themse", "isCorrect": false }
+    ]
+  },
+  {
+    "questionId": 3,
+    "question": "Wie viele Spieler hat eine Eishockeymannschaft auf dem Eis (ohne Torwart)?",
+    "answers": [
+      { "answerId": 0, "answer": "6", "isCorrect": false },
+      { "answerId": 1, "answer": "5", "isCorrect": true },
+      { "answerId": 2, "answer": "4", "isCorrect": false },
+      { "answerId": 3, "answer": "7", "isCorrect": false }
+    ]
+  },
+  {
+    "questionId": 4,
+    "question": "Welches chemische Element hat das Symbol 'Fe'?",
+    "answers": [
+      { "answerId": 0, "answer": "Fluor", "isCorrect": false },
+      { "answerId": 1, "answer": "Eisen", "isCorrect": true },
+      { "answerId": 2, "answer": "Gold", "isCorrect": false },
+      { "answerId": 3, "answer": "Blei", "isCorrect": false }
+    ]
+  },
+  {
+    "questionId": 5,
+    "question": "Was ist die Einheit der elektrischen Spannung?",
+    "answers": [
+      { "answerId": 0, "answer": "Ampere", "isCorrect": false },
+      { "answerId": 1, "answer": "Ohm", "isCorrect": false },
+      { "answerId": 2, "answer": "Watt", "isCorrect": false },
+      { "answerId": 3, "answer": "Volt", "isCorrect": true }
+    ]
+  },
+  {
+    "questionId": 6,
+    "question": "Wann wurde die Berliner Mauer errichtet?",
+    "answers": [
+      { "answerId": 0, "answer": "1961", "isCorrect": true },
+      { "answerId": 1, "answer": "1949", "isCorrect": false },
+      { "answerId": 2, "answer": "1989", "isCorrect": false },
+      { "answerId": 3, "answer": "1953", "isCorrect": false }
+    ]
+  },
+  {
+    "questionId": 7,
+    "question": "Wie heißt das größte Tier der Welt?",
+    "answers": [
+      { "answerId": 0, "answer": "Afrikanischer Elefant", "isCorrect": false },
+      { "answerId": 1, "answer": "Blauwal", "isCorrect": true },
+      { "answerId": 2, "answer": "Walhai", "isCorrect": false },
+      { "answerId": 3, "answer": "Giraffe", "isCorrect": false }
+    ]
+  },
+  {
+    "questionId": 8,
+    "question": "Welche Programmiersprache ist als 'die Mutter des Internets' bekannt?",
+    "answers": [
+      { "answerId": 0, "answer": "Python", "isCorrect": false },
+      { "answerId": 1, "answer": "C++", "isCorrect": false },
+      { "answerId": 2, "answer": "JavaScript", "isCorrect": true },
+      { "answerId": 3, "answer": "Java", "isCorrect": false }
+    ]
+  },
+  {
+    "questionId": 9,
+    "question": "Wie viele Zeitzonen durchquert Russland in West-Ost-Richtung?",
+    "answers": [
+      { "answerId": 0, "answer": "7", "isCorrect": false },
+      { "answerId": 1, "answer": "9", "isCorrect": false },
+      { "answerId": 2, "answer": "11", "isCorrect": true },
+      { "answerId": 3, "answer": "10", "isCorrect": false }
+    ]
+  },
+  {
+    "questionId": 10,
+    "question": "Wer schrieb den Roman 'Faust'?",
+    "answers": [
+      { "answerId": 0, "answer": "Friedrich Schiller", "isCorrect": false },
+      { "answerId": 1, "answer": "Thomas Mann", "isCorrect": false },
+      { "answerId": 2, "answer": "Hermann Hesse", "isCorrect": false },
+      {
+        "answerId": 3,
+        "answer": "Johann Wolfgang von Goethe",
+        "isCorrect": true
+      }
+    ]
+  }
+]
