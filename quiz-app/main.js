@@ -182,7 +182,6 @@ function appendQuestion() {
 
   const oldQuestionContainer = document.getElementById("question-container");
   oldQuestionContainer.replaceWith(newQuestionContainer);
-  console.log(newQuestionContainer);
 
   const buttonSolution = document.getElementById("solution");
   buttonSolution.setAttribute("onclick", "findCorrectAnswerButton()");

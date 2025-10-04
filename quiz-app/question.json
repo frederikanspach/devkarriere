@@ -3,103 +3,2599 @@
     "questionId": 1,
     "question": "Was ist die Hauptstadt von Deutschland?",
     "answers": [
-      { "answerId": 0, "answer": "Hamburg", "isCorrect": false },
-      { "answerId": 1, "answer": "München", "isCorrect": false },
-      { "answerId": 2, "answer": "Berlin", "isCorrect": true },
-      { "answerId": 3, "answer": "Köln", "isCorrect": false }
+      {
+        "answerId": 0,
+        "answer": "Hamburg",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "München",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Berlin",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Köln",
+        "isCorrect": false
+      }
     ]
   },
   {
     "questionId": 2,
     "question": "Welcher Fluss fließt durch die ägyptische Hauptstadt Kairo?",
     "answers": [
-      { "answerId": 0, "answer": "Rhein", "isCorrect": false },
-      { "answerId": 1, "answer": "Donau", "isCorrect": false },
-      { "answerId": 2, "answer": "Nil", "isCorrect": true },
-      { "answerId": 3, "answer": "Themse", "isCorrect": false }
+      {
+        "answerId": 0,
+        "answer": "Rhein",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Donau",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Nil",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Themse",
+        "isCorrect": false
+      }
     ]
   },
   {
     "questionId": 3,
     "question": "Wie viele Spieler hat eine Eishockeymannschaft auf dem Eis (ohne Torwart)?",
     "answers": [
-      { "answerId": 0, "answer": "6", "isCorrect": false },
-      { "answerId": 1, "answer": "5", "isCorrect": true },
-      { "answerId": 2, "answer": "4", "isCorrect": false },
-      { "answerId": 3, "answer": "7", "isCorrect": false }
+      {
+        "answerId": 0,
+        "answer": "6",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "5",
+        "isCorrect": true
+      },
+      {
+        "answerId": 2,
+        "answer": "4",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "7",
+        "isCorrect": false
+      }
     ]
   },
   {
     "questionId": 4,
     "question": "Welches chemische Element hat das Symbol 'Fe'?",
     "answers": [
-      { "answerId": 0, "answer": "Fluor", "isCorrect": false },
-      { "answerId": 1, "answer": "Eisen", "isCorrect": true },
-      { "answerId": 2, "answer": "Gold", "isCorrect": false },
-      { "answerId": 3, "answer": "Blei", "isCorrect": false }
+      {
+        "answerId": 0,
+        "answer": "Fluor",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Eisen",
+        "isCorrect": true
+      },
+      {
+        "answerId": 2,
+        "answer": "Gold",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "Blei",
+        "isCorrect": false
+      }
     ]
   },
   {
     "questionId": 5,
     "question": "Was ist die Einheit der elektrischen Spannung?",
     "answers": [
-      { "answerId": 0, "answer": "Ampere", "isCorrect": false },
-      { "answerId": 1, "answer": "Ohm", "isCorrect": false },
-      { "answerId": 2, "answer": "Watt", "isCorrect": false },
-      { "answerId": 3, "answer": "Volt", "isCorrect": true }
+      {
+        "answerId": 0,
+        "answer": "Ampere",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Ohm",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Watt",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "Volt",
+        "isCorrect": true
+      }
     ]
   },
   {
     "questionId": 6,
     "question": "Wann wurde die Berliner Mauer errichtet?",
     "answers": [
-      { "answerId": 0, "answer": "1961", "isCorrect": true },
-      { "answerId": 1, "answer": "1949", "isCorrect": false },
-      { "answerId": 2, "answer": "1989", "isCorrect": false },
-      { "answerId": 3, "answer": "1953", "isCorrect": false }
+      {
+        "answerId": 0,
+        "answer": "1961",
+        "isCorrect": true
+      },
+      {
+        "answerId": 1,
+        "answer": "1949",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "1989",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "1953",
+        "isCorrect": false
+      }
     ]
   },
   {
     "questionId": 7,
     "question": "Wie heißt das größte Tier der Welt?",
     "answers": [
-      { "answerId": 0, "answer": "Afrikanischer Elefant", "isCorrect": false },
-      { "answerId": 1, "answer": "Blauwal", "isCorrect": true },
-      { "answerId": 2, "answer": "Walhai", "isCorrect": false },
-      { "answerId": 3, "answer": "Giraffe", "isCorrect": false }
+      {
+        "answerId": 0,
+        "answer": "Afrikanischer Elefant",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Blauwal",
+        "isCorrect": true
+      },
+      {
+        "answerId": 2,
+        "answer": "Walhai",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "Giraffe",
+        "isCorrect": false
+      }
     ]
   },
   {
     "questionId": 8,
-    "question": "Welche Programmiersprache ist als 'die Mutter des Internets' bekannt?",
+    "question": "Welche Programmiersprache ist als 'die Sprache des Internets' bekannt?",
     "answers": [
-      { "answerId": 0, "answer": "Python", "isCorrect": false },
-      { "answerId": 1, "answer": "C++", "isCorrect": false },
-      { "answerId": 2, "answer": "JavaScript", "isCorrect": true },
-      { "answerId": 3, "answer": "Java", "isCorrect": false }
+      {
+        "answerId": 0,
+        "answer": "Python",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "C++",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "JavaScript",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Java",
+        "isCorrect": false
+      }
     ]
   },
   {
     "questionId": 9,
     "question": "Wie viele Zeitzonen durchquert Russland in West-Ost-Richtung?",
     "answers": [
-      { "answerId": 0, "answer": "7", "isCorrect": false },
-      { "answerId": 1, "answer": "9", "isCorrect": false },
-      { "answerId": 2, "answer": "11", "isCorrect": true },
-      { "answerId": 3, "answer": "10", "isCorrect": false }
+      {
+        "answerId": 0,
+        "answer": "7",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "9",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "11",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "10",
+        "isCorrect": false
+      }
     ]
   },
   {
     "questionId": 10,
     "question": "Wer schrieb den Roman 'Faust'?",
     "answers": [
-      { "answerId": 0, "answer": "Friedrich Schiller", "isCorrect": false },
-      { "answerId": 1, "answer": "Thomas Mann", "isCorrect": false },
-      { "answerId": 2, "answer": "Hermann Hesse", "isCorrect": false },
+      {
+        "answerId": 0,
+        "answer": "Friedrich Schiller",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Thomas Mann",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Hermann Hesse",
+        "isCorrect": false
+      },
       {
         "answerId": 3,
         "answer": "Johann Wolfgang von Goethe",
         "isCorrect": true
+      }
+    ]
+  },
+  {
+    "questionId": 11,
+    "question": "Welches Edelgas wird oft in Leuchtreklamen verwendet, um eine rote oder orange Farbe zu erzeugen?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Argon",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Neon",
+        "isCorrect": true
+      },
+      {
+        "answerId": 2,
+        "answer": "Xenon",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "Helium",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 12,
+    "question": "Welches ist die höchste Erhebung Afrikas?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Mount Kenia",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Mount Kilimandscharo",
+        "isCorrect": true
+      },
+      {
+        "answerId": 2,
+        "answer": "Mount Stanley",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "Ras Daschän",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 13,
+    "question": "In welchem Jahr begann der Zweite Weltkrieg?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "1936",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "1941",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "1939",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "1945",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 14,
+    "question": "Wer schrieb das Kinderbuch 'Pippi Langstrumpf'?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Michael Ende",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Astrid Lindgren",
+        "isCorrect": true
+      },
+      {
+        "answerId": 2,
+        "answer": "Erich Kästner",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "Joanne K. Rowling",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 15,
+    "question": "Wie viele Löcher hat eine Standard-Golfrunde?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "9",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "16",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "18",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "20",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 16,
+    "question": "Was bedeutet die Abkürzung 'HTML'?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Hyper Transfer Mail Language",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "High Text Machine Language",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Hypertext Markup Language",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Home Tool Management Language",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 17,
+    "question": "Wie viele Kontinente gibt es auf der Erde?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "5",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "6",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "7",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "8",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 18,
+    "question": "Was ist der Hauptbestandteil der Luft, die wir atmen?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Sauerstoff",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Kohlendioxid",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Stickstoff",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Argon",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 19,
+    "question": "In welchem Land liegt die weltberühmte Inkastätte Macchu Picchu?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Kolumbien",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Ecuador",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Peru",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Bolivien",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 20,
+    "question": "Wer war der erste Präsident der Vereinigten Staaten von Amerika?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Thomas Jefferson",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "George Washington",
+        "isCorrect": true
+      },
+      {
+        "answerId": 2,
+        "answer": "Abraham Lincoln",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "John Adams",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 21,
+    "question": "Wer malte das berühmte Ölgemälde 'Mona Lisa'?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Vincent van Gogh",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Pablo Picasso",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Leonardo da Vinci",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Claude Monet",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 22,
+    "question": "Welche Sportart wird beim bekannten Turnier in Wimbledon gespielt?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Golf",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Polo",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Tennis",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Kricket",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 23,
+    "question": "Wie lautet die mathematische Konstante für das Verhältnis des Umfangs eines Kreises zu seinem Durchmesser?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Eulersche Zahl ($e$)",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Goldener Schnitt ($\\Phi$)",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Pi ($\\pi$)",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Grahams Zahl",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 24,
+    "question": "Was ist die offizielle Währung Japans?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Won",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Renminbi",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Yen",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Dollar",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 25,
+    "question": "In welchem Aggregatzustand befindet sich reines Wasser bei $20^circ \\text{C}$ unter Normaldruck?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Fest (Eis)",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Gasförmig (Dampf)",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Plasma",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "Flüssig",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "questionId": 26,
+    "question": "Welches Land ist flächenmäßig das größte in Südamerika?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Argentinien",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Brasilien",
+        "isCorrect": true
+      },
+      {
+        "answerId": 2,
+        "answer": "Kolumbien",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "Chile",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 27,
+    "question": "In welchem Jahr endete der Erste Weltkrieg?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "1914",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "1918",
+        "isCorrect": true
+      },
+      {
+        "answerId": 2,
+        "answer": "1921",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "1917",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 28,
+    "question": "Wie nennt man das traditionelle japanische Wickelkleidungsstück?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Sari",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Dirndl",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Kimono",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Hanbok",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 29,
+    "question": "Wie oft findet die Fußball-Weltmeisterschaft der Männer (FIFA) statt?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Jährlich",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Alle zwei Jahre",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Alle vier Jahre",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Alle fünf Jahre",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 30,
+    "question": "Welcher Technologie-Gigant wurde von Bill Gates und Paul Allen mitbegründet?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Apple",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Microsoft",
+        "isCorrect": true
+      },
+      {
+        "answerId": 2,
+        "answer": "Google",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "IBM",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 31,
+    "question": "Welche Sprache wird weltweit am häufigsten als Muttersprache gesprochen?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Spanisch",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Englisch",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Chinesisch (Mandarin)",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Hindi",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 32,
+    "question": "Welche Funktion haben die Mitochondrien in einer Zelle?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Speicherung von Wasser",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Steuerung der Zellteilung",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Fotosynthese",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "Energieerzeugung (Zellatmung)",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "questionId": 33,
+    "question": "Welches Meer trennt Europa von Nordafrika?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Nordsee",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Mittelmeer",
+        "isCorrect": true
+      },
+      {
+        "answerId": 2,
+        "answer": "Schwarzes Meer",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "Rotes Meer",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 34,
+    "question": "Wer war der letzte Kaiser des Deutschen Reiches?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Otto von Bismarck",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Friedrich III.",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Wilhelm II.",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Ludwig II.",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 35,
+    "question": "Wer ist der Autor der berühmten Tragödie 'Romeo und Julia'?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Johann Wolfgang von Goethe",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "William Shakespeare",
+        "isCorrect": true
+      },
+      {
+        "answerId": 2,
+        "answer": "Charles Dickens",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "Friedrich Schiller",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 36,
+    "question": "Wie viele Ringe hat das olympische Symbol?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "3",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "4",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "5",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "6",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 37,
+    "question": "Was ist die Quadratwurzel aus 144?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "10",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "11",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "12",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "14",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 38,
+    "question": "In welcher europäischen Stadt befindet sich der Eiffelturm?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "London",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Rom",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Paris",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Madrid",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 39,
+    "question": "Was misst ein Barometer?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Temperatur",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Luftdruck",
+        "isCorrect": true
+      },
+      {
+        "answerId": 2,
+        "answer": "Niederschlagsmenge",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "Windgeschwindigkeit",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 40,
+    "question": "Was ist die Hauptstadt von Australien?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Sydney",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Melbourne",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Canberra",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Perth",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 41,
+    "question": "Wann begann die Französische Revolution?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "1776",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "1789",
+        "isCorrect": true
+      },
+      {
+        "answerId": 2,
+        "answer": "1815",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "1848",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 42,
+    "question": "Wer komponierte die Oper 'Die Zauberflöte'?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Johann Sebastian Bach",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Wolfgang Amadeus Mozart",
+        "isCorrect": true
+      },
+      {
+        "answerId": 2,
+        "answer": "Ludwig van Beethoven",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "Richard Wagner",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 43,
+    "question": "Welche Farbe hat die sogenannte 'Black Box' in einem Flugzeug?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Schwarz",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Rot",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Orange",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Gelb",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 44,
+    "question": "Welches Unternehmen entwickelte das mobile Betriebssystem 'Android'?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Apple",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Microsoft",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Google",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Samsung",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 45,
+    "question": "Welcher Kontinent ist der kälteste und trockenste der Erde?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Asien",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Südamerika",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Arktis (Nordpol)",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "Antarktis",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "questionId": 46,
+    "question": "Welches ist das leichteste chemische Element im Periodensystem?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Helium",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Sauerstoff",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Wasserstoff",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Lithium",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 47,
+    "question": "Was ist der längste Fluss der Welt?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Nil",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Jangtse",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Amazonas",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Mississippi",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 48,
+    "question": "Wer war die erste Frau im Weltall?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Sally Ride",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Swetlana Sawizkaja",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Walentina Tereschkowa",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Jelena Serowa",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 49,
+    "question": "Welcher deutsche Schriftsteller ist bekannt für seinen Roman 'Buddenbrooks'?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Hermann Hesse",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Günter Grass",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Theodor Fontane",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "Thomas Mann",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "questionId": 50,
+    "question": "In welchem Land wurde die Kampfsportart Judo erfunden?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "China",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Südkorea",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Japan",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Thailand",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 51,
+    "question": "Was ist das Ergebnis von $7 \\times 8$?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "48",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "54",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "56",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "64",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 52,
+    "question": "Welche Farbe hat die Zunge einer Giraffe?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Rosa",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Hellblau bis Schwarz",
+        "isCorrect": true
+      },
+      {
+        "answerId": 2,
+        "answer": "Rot",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "Grün",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 53,
+    "question": "Welches Metall ist bei Raumtemperatur flüssig?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Blei",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Gallium",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Quecksilber",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Kalium",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 54,
+    "question": "Was ist die Hauptstadt von Kanada?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Toronto",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Vancouver",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Montréal",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "Ottawa",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "questionId": 55,
+    "question": "Wer war Gaius Julius Caesar?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Ein griechischer Philosoph",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Ein römischer Kaiser",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Ein römischer Feldherr und Staatsmann",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Der Gründer Roms",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 56,
+    "question": "Wer war der Leadsänger der britischen Rockband 'Queen'?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Elton John",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Freddie Mercury",
+        "isCorrect": true
+      },
+      {
+        "answerId": 2,
+        "answer": "Robert Plant",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "Mick Jagger",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 57,
+    "question": "Wie lang ist die offizielle Distanz eines Marathonlaufs in Kilometern?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "21,0975 km",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "40 km",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "42,195 km",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "50 km",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 58,
+    "question": "Wie wird ein Fehler oder eine Schwachstelle in einem Computerprogramm typischerweise genannt?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Glitch",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Bug",
+        "isCorrect": true
+      },
+      {
+        "answerId": 2,
+        "answer": "Virus",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "Trojaner",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 59,
+    "question": "Welches Tier ist neben dem Emu auf dem Wappen Australiens abgebildet?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Koala",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Känguru",
+        "isCorrect": true
+      },
+      {
+        "answerId": 2,
+        "answer": "Dingo",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "Tasmanischer Teufel",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 60,
+    "question": "Wie viele Knochen hat ein erwachsener Mensch ungefähr?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "150",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "206",
+        "isCorrect": true
+      },
+      {
+        "answerId": 2,
+        "answer": "250",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "300",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 61,
+    "question": "Wie heißt der längste Gebirgszug der Welt (über Wasser)?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Rocky Mountains",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Himalaya",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Anden",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Alpen",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 62,
+    "question": "In welchem Jahr wurde die Bundesrepublik Deutschland (BRD) gegründet?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "1945",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "1953",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "1949",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "1990",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 63,
+    "question": "Wer schrieb die Fantasy-Trilogie 'Der Herr der Ringe'?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "C.S. Lewis",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "George R.R. Martin",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "J.R.R. Tolkien",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Tolkien C.S. Ringe",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 64,
+    "question": "Welche Farbe hat die Kugel mit der höchsten Punktzahl beim Snooker?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Blau",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Pink",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Rot",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "Schwarz",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "questionId": 65,
+    "question": "Wie viele Seiten hat ein Hexagon?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "5",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "6",
+        "isCorrect": true
+      },
+      {
+        "answerId": 2,
+        "answer": "7",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "8",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 66,
+    "question": "Was ist das älteste bekannte Alphabet der Welt, aus dem viele moderne Alphabete hervorgegangen sind?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Lateinisches Alphabet",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Griechisches Alphabet",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Phönizisches Alphabet",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Keilschrift",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 67,
+    "question": "Was ist die chemische Formel für Wasser?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "$CO_2$",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "$H_2O$",
+        "isCorrect": true
+      },
+      {
+        "answerId": 2,
+        "answer": "$NaCl$",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "$NH_3$",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 68,
+    "question": "Welches Land wird oft als 'Land der aufgehenden Sonne' bezeichnet?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "China",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Südkorea",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Thailand",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "Japan",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "questionId": 69,
+    "question": "Wer war der Begründer des Buddhismus?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Konfuzius",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Laozi",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Siddhartha Gautama",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Mohammed",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 70,
+    "question": "Welcher Künstler ist bekannt für seine 'Suppendosen'-Gemälde (z.B. Campbell's Soup Cans)?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Salvador Dalí",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Pablo Picasso",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Roy Lichtenstein",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "Andy Warhol",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "questionId": 71,
+    "question": "In welchem Sport gibt es den 'Touchdown'?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Fußball",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Rugby",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "American Football",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Handball",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 72,
+    "question": "Wie viele Megabyte (MB) entsprechen einem Gigabyte (GB)?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "1000 MB",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "1024 MB",
+        "isCorrect": true
+      },
+      {
+        "answerId": 2,
+        "answer": "2048 MB",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "500 MB",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 73,
+    "question": "Wie viele Sterne hat die Flagge der Vereinigten Staaten von Amerika?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "13",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "50",
+        "isCorrect": true
+      },
+      {
+        "answerId": 2,
+        "answer": "52",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "48",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 74,
+    "question": "Wie schnell ist das Licht im Vakuum (ungefähr)?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "$30.000$ km/s",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "$300.000$ km/s",
+        "isCorrect": true
+      },
+      {
+        "answerId": 2,
+        "answer": "$3.000.000$ km/s",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "$3.000$ km/s",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 75,
+    "question": "Welche Wüste ist die größte der Welt (nicht-polar)?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Gobi-Wüste",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Arabische Wüste",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Kalahari",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "Sahara",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "questionId": 76,
+    "question": "Wer war Martin Luther King Jr.?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Ein US-Präsident",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Ein Führer der Bürgerrechtsbewegung in den USA",
+        "isCorrect": true
+      },
+      {
+        "answerId": 2,
+        "answer": "Ein berühmter Musiker",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "Ein bekannter Schriftsteller",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 77,
+    "question": "Welcher Roman beginnt mit dem Satz: 'Alle glücklichen Familien sind einander ähnlich; jede unglückliche Familie ist auf ihre eigene Weise unglücklich.'?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "'Krieg und Frieden'",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "'Die Brüder Karamasow'",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "'Anna Karenina'",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "'Verbrechen und Strafe'",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 78,
+    "question": "In welcher Stadt fanden die ersten modernen Olympischen Spiele im Jahr 1896 statt?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Paris",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "London",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Athen",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Rom",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 79,
+    "question": "Was ist das Ergebnis von $5!$ (5 Fakultät)?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "25",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "100",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "120",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "150",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 80,
+    "question": "Welches Land hat derzeit die größte Bevölkerung der Welt (Stand 2023/2024)?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "China",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Vereinigte Staaten",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Indien",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Indonesien",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 81,
+    "question": "Wie nennt man ein Atom oder Molekül, das eine positive oder negative elektrische Ladung trägt?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Isotop",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Neutron",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Ion",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Proton",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 82,
+    "question": "Welches Land hat die längste Küstenlinie der Welt?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Russland",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Kanada",
+        "isCorrect": true
+      },
+      {
+        "answerId": 2,
+        "answer": "Indonesien",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "Australien",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 83,
+    "question": "Wer wurde 1990 nach 27-jähriger Haft entlassen und später Präsident Südafrikas?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Desmond Tutu",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Nelson Mandela",
+        "isCorrect": true
+      },
+      {
+        "answerId": 2,
+        "answer": "F.W. de Klerk",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "Robert Mugabe",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 84,
+    "question": "Wer gilt als der 'King of Pop'?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Elvis Presley",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Prince",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Michael Jackson",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Madonna",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 85,
+    "question": "Wie lang ist ein 'Quarter' im Basketball in der NBA (National Basketball Association)?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "8 Minuten",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "10 Minuten",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "12 Minuten",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "15 Minuten",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 86,
+    "question": "Was ist die Hauptfunktion eines 'Routers' in einem Computernetzwerk?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Verschlüsselung von Daten",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Datenpakete zwischen Netzwerken weiterleiten",
+        "isCorrect": true
+      },
+      {
+        "answerId": 2,
+        "answer": "Speicherung von Webseiten",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "Ausgabe von Dokumenten",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 87,
+    "question": "Was ist die offizielle Sprache Brasiliens?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Spanisch",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Portugiesisch",
+        "isCorrect": true
+      },
+      {
+        "answerId": 2,
+        "answer": "Französisch",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "Brasilianisch",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 88,
+    "question": "Welches Organ produziert das Hormon Insulin, das den Blutzuckerspiegel reguliert?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Leber",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Bauchspeicheldrüse (Pankreas)",
+        "isCorrect": true
+      },
+      {
+        "answerId": 2,
+        "answer": "Niere",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "Schilddrüse",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 89,
+    "question": "Welches ist der kleinste Kontinent der Erde?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Europa",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Südamerika",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Australien/Ozeanien",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Nordamerika",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 90,
+    "question": "Wer war der erste römische Kaiser?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Julius Caesar",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Nero",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Augustus",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Konstantin",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 91,
+    "question": "Welcher Autor schrieb die berühmte Erzählung 'Die Verwandlung'?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Hermann Hesse",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Franz Kafka",
+        "isCorrect": true
+      },
+      {
+        "answerId": 2,
+        "answer": "Bertolt Brecht",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "Thomas Mann",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 92,
+    "question": "Wie viele Spieler einer Volleyballmannschaft stehen während des Spiels auf dem Feld?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "4",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "5",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "6",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "7",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 93,
+    "question": "Wie lautet die Summe der Innenwinkel eines Dreiecks in der euklidischen Geometrie?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "$90^circ$",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "$180^circ$",
+        "isCorrect": true
+      },
+      {
+        "answerId": 2,
+        "answer": "$270^circ$",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "$360^circ$",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 94,
+    "question": "Was ist die Hauptstadt von Island?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Oslo",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Helsinki",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Reykjavik",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Stockholm",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 95,
+    "question": "Was ist die Maßeinheit für Radioaktivität (Aktivität von Radionukliden)?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Ohm",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Coulomb",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Sievert",
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "answer": "Becquerel",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "questionId": 96,
+    "question": "Welche italienische Stadt ist bekannt für ihre Kanäle und Gondeln?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Rom",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Florenz",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Venedig",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Mailand",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 97,
+    "question": "In welchem Jahr trat der Vertrag von Maastricht in Kraft, der die Europäische Union (EU) in ihrer heutigen Form gründete?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "1957",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "1989",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "1993",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "2002",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 98,
+    "question": "Wer ist der berühmte deutsche Komponist der 9. Sinfonie ('Ode an die Freude')?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Johann Sebastian Bach",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Richard Wagner",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Ludwig van Beethoven",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Wolfgang Amadeus Mozart",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 99,
+    "question": "Was beschreibt ein 'Phishing'-Angriff in der Informationstechnologie?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Die Installation von Viren auf einem Computer",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Die Überlastung eines Servers mit Anfragen",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Betrügerische E-Mails zum Abfangen persönlicher Daten",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Die unbefugte Änderung von Webseiten-Inhalten",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionId": 100,
+    "question": "Welches ist das am häufigsten vorkommende Metall in der Erdkruste?",
+    "answers": [
+      {
+        "answerId": 0,
+        "answer": "Eisen",
+        "isCorrect": false
+      },
+      {
+        "answerId": 1,
+        "answer": "Silizium",
+        "isCorrect": false
+      },
+      {
+        "answerId": 2,
+        "answer": "Aluminium",
+        "isCorrect": true
+      },
+      {
+        "answerId": 3,
+        "answer": "Magnesium",
+        "isCorrect": false
       }
     ]
   }
