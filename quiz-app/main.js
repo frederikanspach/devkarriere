@@ -47,7 +47,6 @@ function saveQuestionsToLocalStorage() {
 
 function saveScoreToLocalStorage() {
   console.log("Speichere Punktestand im LocalStorage.");
-  localStorage.setItem(QUESTION_STORAGE_KEY, JSON.stringify(questionArray));
 
   const scoreData = {
     correct: correctCount,
@@ -86,7 +85,7 @@ async function loadQuizData() {
     console.log(questionArray);
     return;
   } else {
-    console.log("Keine Daten geladen.");
+    console.log("Keine Daten gefunden.");
     // Fallback: Von der JSON-Datei laden
     const loadedQuestions = await loadQuestionsFromFile();
     if (loadedQuestions.length > 0) {
@@ -178,35 +177,19 @@ function appendQuestion() {
   const newAnswerContainer = document.createElement("div");
   newAnswerContainer.classList.add("answer-container");
 
-  // Buttons bauen
-  const newButtonOne = createButton(answerIndexArray[0]);
-  newButtonOne.id = "answer-one";
-  newButtonOne.addEventListener("click", () => {
-    checkAnswer(answerIndexArray[0], "answer-one");
-  });
+  // Nach dem Lösungsvideo geändert
+  answerIndexArray.forEach((id) => {
+    const newButton = document.createElement("button");
+    newButton.classList.add("btn", "btn-answer");
+    newButton.textContent = currentQuestionObject.answers[id].answer;
+    newButton.id = id;
 
-  const newButtonTwo = createButton(answerIndexArray[1]);
-  newButtonTwo.id = "answer-two";
-  newButtonTwo.addEventListener("click", () => {
-    checkAnswer(answerIndexArray[1], "answer-two");
-  });
+    newButton.addEventListener("click", () => {
+      checkAnswer(id);
+    });
 
-  const newButtonThree = createButton(answerIndexArray[2]);
-  newButtonThree.id = "answer-three";
-  newButtonThree.addEventListener("click", () => {
-    checkAnswer(answerIndexArray[2], "answer-three");
+    newAnswerContainer.appendChild(newButton);
   });
-
-  const newButtonFour = createButton(answerIndexArray[3]);
-  newButtonFour.id = "answer-four";
-  newButtonFour.addEventListener("click", () => {
-    checkAnswer(answerIndexArray[3], "answer-four");
-  });
-
-  newAnswerContainer.appendChild(newButtonOne);
-  newAnswerContainer.appendChild(newButtonTwo);
-  newAnswerContainer.appendChild(newButtonThree);
-  newAnswerContainer.appendChild(newButtonFour);
 
   const newQuestionContainer = document.createElement("div");
   newQuestionContainer.id = "question-container";
@@ -222,72 +205,37 @@ function appendQuestion() {
   buttonSolution.removeAttribute("disabled");
 }
 
-function createButton(answerIndex) {
-  const newButton = document.createElement("button");
-  newButton.classList.add("btn", "btn-answer");
-  newButton.dataset.answerIndex = answerIndex;
-  newButton.textContent = currentQuestionObject.answers[answerIndex].answer;
-
-  return newButton;
-}
-
 //  Prüfe ob die Antwort richtig oder Falsch ist
-function checkAnswer(answerIndex, button) {
-  if (currentQuestionObject.answers[answerIndex].isCorrect) {
-    answerCorrect(button);
+function checkAnswer(id) {
+  const correctAnswer = currentQuestionObject.answers.find((answer) => {
+    return answer.isCorrect;
+  });
+
+  if (correctAnswer.answerId === id) {
+    document.getElementById(id).classList.add("correct");
+
     deactivateAnswerButtons();
 
     correctCount++;
     updateScoreDisplay();
   } else {
-    answerIncorrect(button);
+    document.getElementById(id).classList.add("incorrect");
+    document.getElementById(correctAnswer.answerId).classList.add("correct");
 
     incorrectCount++;
     updateScoreDisplay();
   }
 }
 
-// Nur korrekten Button markieren
-function answerCorrect(buttonId) {
-  const button = document.getElementById(buttonId);
-  button.classList.add("correct");
-}
-
-// Falschen und korrekten Button markieren
-function answerIncorrect(buttonId) {
-  const button = document.getElementById(buttonId);
-  button.classList.add("incorrect");
-
-  // Suche den richtigen Antwort-Button
-  findCorrectAnswerButton();
-}
-
 // Lösungsfunktion um den Zähler hoch zu zählen
 function solution() {
+  const correctAnswer = currentQuestionObject.answers.find((answer) => {
+    return answer.isCorrect;
+  });
+  document.getElementById(correctAnswer.answerId).classList.add("correct");
+
   solutionCount++;
   updateScoreDisplay();
-  findCorrectAnswerButton();
-}
-
-// Finde die richtige Antwort
-function findCorrectAnswerIndex() {
-  for (let i = 0; i < currentQuestionObject.answers.length; i++) {
-    if (currentQuestionObject.answers[i].isCorrect) {
-      return i;
-    }
-  }
-}
-
-// Finde den richtigen Antwort-Button
-function findCorrectAnswerButton() {
-  const correctIndex = findCorrectAnswerIndex();
-
-  const correctButton = document.querySelector(
-    `.btn-answer[data-answer-index="${correctIndex}"]`
-  );
-
-  answerCorrect(correctButton.id);
-  deactivateAnswerButtons();
 }
 
 function deactivateAnswerButtons() {
