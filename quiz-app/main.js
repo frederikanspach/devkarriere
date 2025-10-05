@@ -70,7 +70,10 @@ function loadScoreFromLocalStorage() {
     correctCount = 0;
     incorrectCount = 0;
     solutionCount = 0;
+    console.log("Erzeuge neuen Punktestand.");
   }
+
+  updateScoreDisplay();
 }
 
 // Ladelogik
@@ -214,17 +217,16 @@ function checkAnswer(id) {
   if (correctAnswer.answerId === id) {
     document.getElementById(id).classList.add("correct");
 
-    deactivateAnswerButtons();
-
     correctCount++;
-    updateScoreDisplay();
   } else {
     document.getElementById(id).classList.add("incorrect");
     document.getElementById(correctAnswer.answerId).classList.add("correct");
 
     incorrectCount++;
-    updateScoreDisplay();
   }
+  deactivateAnswerButtons();
+  updateScoreDisplay();
+  saveScoreToLocalStorage();
 }
 
 // Lösungsfunktion um den Zähler hoch zu zählen
@@ -236,6 +238,7 @@ function solution() {
 
   solutionCount++;
   updateScoreDisplay();
+  saveScoreToLocalStorage();
 }
 
 function deactivateAnswerButtons() {
