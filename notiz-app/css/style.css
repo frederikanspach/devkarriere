@@ -3,8 +3,7 @@
 /* Variablen (Custom Properties) */
 :root {
   --primary-color: #ffffff;
-  --primary-background: #ca3677;
-  --primary-background--hover: rgb(249, 126, 237);
+  --primary-background: #df0071;
   scroll-behavior: smooth;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -39,6 +38,8 @@ main {
   border: none;
   border-radius: 5px;
   padding: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .new-note-button img {
@@ -65,10 +66,16 @@ main {
   padding: 0.5rem;
   margin: 0.5rem 0rem;
   gap: 0.5rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .side-box:hover {
-  filter: brightness(0.9);
+  filter: brightness(0.6);
+  /* background-color: #e2c3d273; */
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .side-box:focus {
@@ -79,9 +86,11 @@ main {
   color: #555;
 }
 
-time {
+.time {
+  font-size: 0.75rem;
   color: #555;
   text-align: right;
+  font-style: italic;
 }
 
 .right-side {
@@ -112,6 +121,8 @@ time {
 .button-option {
   border: none;
   background-color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .button-option img {
