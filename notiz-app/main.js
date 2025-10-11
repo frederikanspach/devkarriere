@@ -1,40 +1,48 @@
 "use strict";
 
-const noteArray = [
-  {
-    title: "Kleine Notiz 1",
-    content: "Lorem Ipsum",
-    id: 1,
-    lastUpdated: 1693149614492,
-  },
-  {
-    title: "Große Notiz 2",
-    content: "Lorem Ipsum",
-    id: 2,
-    lastUpdated: 1693149622194,
-  },
-  {
-    title: "Eine Notiz 3",
-    content: "Lorem Ipsum",
-    id: 3,
-    lastUpdated: 1693149629935,
-  },
-];
+const NOTE_STORAGE_KEY = "noteApp";
+let noteArray = [];
 
-// Listener Load Page
-document.addEventListener("DOMContentLoaded", appendNotesToHTML);
+// Listener
+document.addEventListener("DOMContentLoaded", init);
 
-// Notiz-Daten einlesen
-function loadNotesFromLocalStorage() {
-  // Notizen Nach Datum sortieren
-  return noteArray;
+const saveNote = document.getElementById("save-note");
+saveNote.addEventListener("click", () => {
+  saveCurrentNote();
+});
+
+const deleteNote = document.getElementById("delete-note");
+deleteNote.addEventListener("click", () => {
+  deleteCurrentNote();
+});
+
+const [newNoteButton] = document.getElementsByClassName("new-note-button");
+newNoteButton.addEventListener("click", () => {
+  resetNoteEditMode();
+});
+
+function init() {
+  loadFromLocalStorage();
+  appendNotesToHTML();
 }
 
-// Notiz-Daten schreiben: LocalStorage
+// Daten aus dem localStorage laden
+function loadFromLocalStorage() {
+  noteArray = JSON.parse(localStorage.getItem(NOTE_STORAGE_KEY)) || [];
+}
+
+// Daten in das localStorage schreiben
+function saveToLocalStorage() {
+  localStorage.setItem(NOTE_STORAGE_KEY, JSON.stringify(noteArray));
+}
 
 // Notiz-Daten in HTML anzeigen
 function appendNotesToHTML() {
-  const sortedNoteArray = loadNotesFromLocalStorage();
+  console.log(noteArray);
+  // Sortieren des Arrays absteigend
+  const sortedNoteArray = noteArray.sort(
+    (a, b) => b.lastUpdated - a.lastUpdated
+  );
 
   const newSideList = document.createElement("div");
   newSideList.classList.add("side-list");
@@ -52,7 +60,7 @@ function appendNotesToHTML() {
 
     const newNoteLastUpdate = document.createElement("div");
     newNoteLastUpdate.classList.add("time");
-    newNoteLastUpdate.textContent = note.lastUpdated;
+    newNoteLastUpdate.textContent = formatDate(note.lastUpdated);
 
     newNoteSection.appendChild(newNoteHeader);
     newNoteSection.appendChild(newNoteParagraph);
@@ -69,6 +77,23 @@ function appendNotesToHTML() {
   oldSideList[0].replaceWith(newSideList);
 }
 
+function formatDate(date) {
+  const dateObject = new Date(date);
+
+  // Formatieren mit toLocaleString() für deutsche Darstellung
+  const formattedDate = dateObject.toLocaleString("de-DE", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false,
+  });
+
+  return formattedDate;
+}
+
 function showNoteInEditMode(noteId) {
   let editNoteArray;
 
@@ -81,6 +106,7 @@ function showNoteInEditMode(noteId) {
   // Notiz-Input-Feld erstellen
   const newInputNoteHeader = document.createElement("input");
   newInputNoteHeader.id = "input-note-header";
+  newInputNoteHeader.dataset.noteId = noteId;
   newInputNoteHeader.type = "text";
   newInputNoteHeader.placeholder = "Überschrift eingeben...";
   newInputNoteHeader.required = true;
@@ -92,54 +118,99 @@ function showNoteInEditMode(noteId) {
   // Notiz-Input-Textarea erstellen
   const newInputNoteBody = document.createElement("textarea");
   newInputNoteBody.id = "input-note-body";
+  newInputNoteBody.dataset.noteId = noteId;
   newInputNoteBody.placeholder = "Fang' an eine Notiz zu erstellen";
   newInputNoteBody.required = true;
   newInputNoteBody.value = editNoteArray.content;
 
-  const oldInputNoteBody = document.getElementById("input-note-body");
-  oldInputNoteBody.replaceWith(newInputNoteBody);
+  const oldInputBody = document.getElementById("input-note-body");
+  oldInputBody.replaceWith(newInputNoteBody);
+}
 
-  // Save-Button erstellen
-  const newSaveButton = document.createElement("button");
-  newSaveButton.id = "save-note";
-  newSaveButton.classList.add("button-option");
-  newSaveButton.dataset.id = editNoteArray.id;
+function resetNoteEditMode() {
+  // Notiz-Input-Feld leeren
+  const newInputNoteHeader = document.createElement("input");
+  newInputNoteHeader.id = "input-note-header";
+  newInputNoteHeader.type = "text";
+  newInputNoteHeader.placeholder = "Überschrift eingeben...";
+  newInputNoteHeader.required = true;
+  newInputNoteHeader.value = "";
 
-  const imgSave = document.createElement("img");
-  imgSave.src = "img/save-icon.png";
-  imgSave.alt = "Neue Notiz speichern";
-  newSaveButton.appendChild(imgSave);
+  const oldInputNoteHeader = document.getElementById("input-note-header");
+  oldInputNoteHeader.replaceWith(newInputNoteHeader);
 
-  const oldSaveButton = document.getElementById("save-note");
-  oldSaveButton.replaceWith(newSaveButton);
+  // Notiz-Input-Textarea leeren
+  const newInputNoteBody = document.createElement("textarea");
+  newInputNoteBody.id = "input-note-body";
+  newInputNoteBody.placeholder = "Fang' an eine Notiz zu erstellen";
+  newInputNoteBody.required = true;
+  newInputNoteBody.value = "";
 
-  newSaveButton.addEventListener("click", () => {
-    saveCurrentNote(editNoteArray.id);
-  });
-
-  console.log(newSaveButton);
-
-  // Delete-Button erstellen
-  const newDeleteButton = document.createElement("button");
-  newDeleteButton.id = "delete-note";
-  newDeleteButton.classList.add("button-option");
-  newDeleteButton.dataset.id = editNoteArray.id;
-
-  const imgDelete = document.createElement("img");
-  imgDelete.src = "img/delete-icon.png";
-  imgDelete.alt = "Notiz löschen";
-  newDeleteButton.appendChild(imgDelete);
-
-  const oldDeleteButton = document.getElementById("delete-note");
-  oldDeleteButton.replaceWith(newDeleteButton);
-
-  newDeleteButton.addEventListener("click", () => {
-    saveCurrentNote(editNoteArray.id);
-  });
-  console.log(newDeleteButton);
+  const oldInputBody = document.getElementById("input-note-body");
+  oldInputBody.replaceWith(newInputNoteBody);
 }
 
 // Geänderte Notiz speichern
-function saveCurrentNote(id) {
-  console.log(id);
+function saveCurrentNote() {
+  const currentNoteHeader = document.getElementById("input-note-header");
+  const currentNoteBody = document.getElementById("input-note-body");
+  let highesItemId;
+
+  if (currentNoteHeader.dataset.noteId) {
+    // Note update
+    for (let item of noteArray) {
+      console.log(item.id);
+      if (Number(currentNoteHeader.dataset.noteId) === item.id) {
+        item.title = currentNoteHeader.value;
+        item.content = currentNoteBody.value;
+        item.lastUpdated = Date.now();
+        appendNotesToHTML();
+        saveToLocalStorage();
+        return;
+      }
+    }
+  } else if (currentNoteHeader.value && currentNoteBody.value) {
+    // new Note
+    for (let item of noteArray) {
+      if (highesItemId) {
+        if (highesItemId.id < item.id) {
+          highesItemId = item;
+        }
+      } else {
+        highesItemId = item;
+      }
+    }
+
+    const newNoteObject = {};
+    newNoteObject.id = highesItemId ? highesItemId.id + 1 : 1;
+    newNoteObject.title = currentNoteHeader.value;
+    newNoteObject.content = currentNoteBody.value;
+    newNoteObject.lastUpdated = Date.now();
+
+    noteArray.push(newNoteObject);
+    appendNotesToHTML();
+    resetNoteEditMode();
+    saveToLocalStorage();
+  }
+}
+
+function deleteCurrentNote() {
+  const deleteId = Number(
+    document.getElementById("input-note-header").dataset.noteId
+  );
+
+  if (!deleteId) {
+    return;
+  }
+
+  if (deleteId) {
+    const deleteElement = noteArray.findIndex(
+      (object) => object.id === deleteId
+    );
+    noteArray.splice(deleteElement, 1);
+    console.log(noteArray);
+    appendNotesToHTML();
+    resetNoteEditMode();
+    saveToLocalStorage();
+  }
 }
