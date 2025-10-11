@@ -167,10 +167,6 @@ function deleteCurrentNote() {
     document.getElementById("input-note-header").dataset.noteId
   );
 
-  if (!deleteId) {
-    return;
-  }
-
   if (deleteId) {
     const deleteElement = noteArray.findIndex(
       (object) => object.id === deleteId
