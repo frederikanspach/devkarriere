@@ -6,22 +6,23 @@ let noteArray = [];
 // Listener
 document.addEventListener("DOMContentLoaded", init);
 
-const saveNote = document.getElementById("save-note");
-saveNote.addEventListener("click", () => {
-  saveCurrentNote();
-});
-
-const deleteNote = document.getElementById("delete-note");
-deleteNote.addEventListener("click", () => {
-  deleteCurrentNote();
-});
-
-const [newNoteButton] = document.getElementsByClassName("new-note-button");
-newNoteButton.addEventListener("click", () => {
-  resetNoteEditMode();
-});
-
 function init() {
+  // Listener
+  const saveNote = document.getElementById("save-note");
+  saveNote.addEventListener("click", () => {
+    saveCurrentNote();
+  });
+
+  const deleteNote = document.getElementById("delete-note");
+  deleteNote.addEventListener("click", () => {
+    deleteCurrentNote();
+  });
+
+  const [newNoteButton] = document.getElementsByClassName("new-note-button");
+  newNoteButton.addEventListener("click", () => {
+    resetNoteEditMode();
+  });
+
   loadFromLocalStorage();
   appendNotesToHTML();
 }
@@ -38,7 +39,6 @@ function saveToLocalStorage() {
 
 // Notiz-Daten in HTML anzeigen
 function appendNotesToHTML() {
-  console.log(noteArray);
   // Sortieren des Arrays absteigend
   const sortedNoteArray = noteArray.sort(
     (a, b) => b.lastUpdated - a.lastUpdated
@@ -95,59 +95,27 @@ function formatDate(date) {
 }
 
 function showNoteInEditMode(noteId) {
-  let editNoteArray;
-
-  for (let item of noteArray) {
-    if (item.id === noteId) {
-      editNoteArray = item;
-    }
-  }
+  let editNoteArray = noteArray.find((item) => item.id === noteId);
+  if (!editNoteArray) return;
 
   // Notiz-Input-Feld erstellen
-  const newInputNoteHeader = document.createElement("input");
-  newInputNoteHeader.id = "input-note-header";
-  newInputNoteHeader.dataset.noteId = noteId;
-  newInputNoteHeader.type = "text";
-  newInputNoteHeader.placeholder = "Überschrift eingeben...";
-  newInputNoteHeader.required = true;
-  newInputNoteHeader.value = editNoteArray.title;
-
-  const oldInputNoteHeader = document.getElementById("input-note-header");
-  oldInputNoteHeader.replaceWith(newInputNoteHeader);
+  const inputNoteHeader = document.getElementById("input-note-header");
+  inputNoteHeader.dataset.noteId = noteId;
+  inputNoteHeader.value = editNoteArray.title;
 
   // Notiz-Input-Textarea erstellen
-  const newInputNoteBody = document.createElement("textarea");
-  newInputNoteBody.id = "input-note-body";
-  newInputNoteBody.dataset.noteId = noteId;
-  newInputNoteBody.placeholder = "Fang' an eine Notiz zu erstellen";
-  newInputNoteBody.required = true;
-  newInputNoteBody.value = editNoteArray.content;
-
-  const oldInputBody = document.getElementById("input-note-body");
-  oldInputBody.replaceWith(newInputNoteBody);
+  const inputBody = document.getElementById("input-note-body");
+  inputBody.value = editNoteArray.content;
 }
 
 function resetNoteEditMode() {
   // Notiz-Input-Feld leeren
-  const newInputNoteHeader = document.createElement("input");
-  newInputNoteHeader.id = "input-note-header";
-  newInputNoteHeader.type = "text";
-  newInputNoteHeader.placeholder = "Überschrift eingeben...";
-  newInputNoteHeader.required = true;
-  newInputNoteHeader.value = "";
+  const inputNoteHeader = document.getElementById("input-note-header");
+  inputNoteHeader.value = "";
+  delete inputNoteHeader.dataset.noteId;
 
-  const oldInputNoteHeader = document.getElementById("input-note-header");
-  oldInputNoteHeader.replaceWith(newInputNoteHeader);
-
-  // Notiz-Input-Textarea leeren
-  const newInputNoteBody = document.createElement("textarea");
-  newInputNoteBody.id = "input-note-body";
-  newInputNoteBody.placeholder = "Fang' an eine Notiz zu erstellen";
-  newInputNoteBody.required = true;
-  newInputNoteBody.value = "";
-
-  const oldInputBody = document.getElementById("input-note-body");
-  oldInputBody.replaceWith(newInputNoteBody);
+  const inputNoteBody = document.getElementById("input-note-body");
+  inputNoteBody.value = "";
 }
 
 // Geänderte Notiz speichern
@@ -159,12 +127,12 @@ function saveCurrentNote() {
   if (currentNoteHeader.dataset.noteId) {
     // Note update
     for (let item of noteArray) {
-      console.log(item.id);
       if (Number(currentNoteHeader.dataset.noteId) === item.id) {
         item.title = currentNoteHeader.value;
         item.content = currentNoteBody.value;
         item.lastUpdated = Date.now();
         appendNotesToHTML();
+        resetNoteEditMode();
         saveToLocalStorage();
         return;
       }
@@ -208,7 +176,6 @@ function deleteCurrentNote() {
       (object) => object.id === deleteId
     );
     noteArray.splice(deleteElement, 1);
-    console.log(noteArray);
     appendNotesToHTML();
     resetNoteEditMode();
     saveToLocalStorage();
